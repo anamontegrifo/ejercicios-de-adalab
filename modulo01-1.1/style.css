@@ -1,0 +1,20 @@
+body{
+    background-color: #f3f4f5;
+    font-family: Georgia, serif;
+    font-size: 18px;
+    color: #757575;
+}
+h1, h2, h3{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+h1{
+    font-size: 24px;
+}
+.bold{
+    color: black;
+    font-weight: bold;
+}
+
+
