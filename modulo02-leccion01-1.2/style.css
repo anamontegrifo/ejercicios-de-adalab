@@ -8,3 +8,13 @@ th, td{
     padding: 5px;
 
 }
+.text-link{
+    color: rebeccapurple;
+}
+.text-link:hover{
+    background-color: purple;
+    color: white;
+}
+.links{
+    color: red;
+}
