@@ -1,0 +1,33 @@
+.box {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+}
+
+p {
+  text-align: revert;
+}
+.image1 {
+  height: 100px;
+  width: 100px;
+}
+
+.image2 {
+  height: 200px;
+  width: 200px;
+}
+
+.container {
+  box-sizing: content-box;
+  height: 100px;
+  width: 100px;
+  border: 5px solid orange;
+
+  background-color: gray;
+  margin: 30px auto;
+}
+
+.img100 {
+  height: 100px;
+  width: 100px;
+}
