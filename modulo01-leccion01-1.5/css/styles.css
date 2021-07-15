@@ -130,3 +130,35 @@ footer {
   width: 100%;
   background-color: yellow;
 }
+
+/*Ejercicio 7*/
+.title {
+  width: 86vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.caja-de-textos {
+  width: 86vw;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pdf-section {
+  width: 86vw;
+  display: flex;
+  margin: 25px auto 10px;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.icon {
+  font-size: 30px;
+  color: red;
+}
+hr {
+  width: 86vw;
+  margin-left: auto;
+  margin-right: auto;
+}
