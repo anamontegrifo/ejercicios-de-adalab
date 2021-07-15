@@ -1,0 +1,22 @@
+.body {
+  margin: 20px;
+}
+.mama {
+  width: 100%;
+  padding: 50px;
+  border: 10px solid orange;
+}
+
+.box {
+  border: 15px solid black;
+  width: 50%;
+}
+.title {
+  font-size: 40px;
+  width: 50%;
+  max-width: 560px;
+  min-width: 400px;
+}
+.image {
+  width: 25%;
+}
