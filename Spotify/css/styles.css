@@ -34,6 +34,7 @@
   background-color: var(--ppal-color);
   font-family: var(--ppal-font);
 }
+
 .h1-hero {
   color: white;
   font-family: var(--ppal-font);
@@ -50,16 +51,24 @@
   line-height: 40px;
   margin-bottom: 20px;
 }
+
+.plans-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .link-plans {
   color: white;
   background-color: rgb(30, 172, 73);
   text-decoration: none;
   font-family: var(--ppal-font-);
-  font-weight: 400;
+  font-weight: 700;
   font-size: 14px;
+  line-height: 14px;
   display: flex;
   height: 50px;
-  max-width: 450px;
+  width: 450px;
   border-radius: 30px;
   justify-content: center;
   align-items: center;
@@ -76,6 +85,7 @@
   position: relative;
   display: inline-block;
   width: 100%;
+  margin-bottom: 200px;
   padding: 50px 25px 30px;
   top: 55px;
   justify-content: center;
@@ -112,7 +122,7 @@
   position: absolute;
   width: 110px;
 }
-li h3 {
+li > h3 {
   margin-left: 125px;
   font-family: var(--ppal-font);
   line-height: 26px;
@@ -121,7 +131,7 @@ li h3 {
   margin-bottom: 12px;
 }
 
-li p {
+li > p {
   margin-left: 125px;
   font-family: var(--ppal-font);
   font-size: 16px;
@@ -130,7 +140,59 @@ li p {
 }
 
 .footer {
+  position: fixed;
+  bottom: 0;
   background-color: black;
   color: white;
   width: 100%;
+  height: 120px;
+  padding: 20px;
+  margin-top: 300px;
+  box-sizing: border-box;
+  font-family: var(--ppal-font);
+  font-size: 12px;
+}
+.right-links {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  right: 20px;
+  bottom: 30px;
+}
+
+.spain-text {
+  text-decoration: none;
+  color: white;
+  justify-items: flex-end;
+  margin-bottom: 15px;
+}
+
+.spain-png {
+  position: relative;
+  bottom: -5px;
+  width: 24px;
+}
+.wrap-links {
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: start;
+  width: 68%;
+  bottom: 30px;
+}
+.wrap-li {
+  text-decoration: none;
+  color: white;
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 15px;
+}
+.spain-text:hover,
+.wrap-li:hover {
+  color: rgb(30, 172, 73);
 }
