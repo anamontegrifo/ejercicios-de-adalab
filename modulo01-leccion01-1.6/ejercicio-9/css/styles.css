@@ -1,0 +1,35 @@
+body {
+  background-color: lightgray;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+header {
+  height: 70px;
+  padding: 10px;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  background-color: lightgreen;
+}
+.links-item {
+  display: flex;
+}
+.main {
+  padding-top: 5px;
+  font-size: 18px;
+  background-color: yellow;
+  line-height: 1.2em;
+  flex-grow: 2;
+}
+.main-heading {
+  margin-bottom: 20px;
+}
+.related-info {
+  background-color: grey;
+  height: 100px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.h3-aside {
+  margin-bottom: 15px;
+}
