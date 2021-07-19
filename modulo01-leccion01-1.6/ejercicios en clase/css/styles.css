@@ -1,1 +1,45 @@
+/*MOBILE STYLES*/
+.container {
+  background-color: blue;
+}
+.image {
+  background-image: url(../images/descarga.jpeg);
+  width: 450px;
+  height: 450px;
+}
+.parrafos{
+  display: flex;
+  flex-direction: column;
+}
 
+/*TABLET STYLES*/
+@media all and (min-width: 768px) {
+  .container {
+    background-color: orange;
+  }
+  .image {
+    background-image: url(../images/rsz_1bram-naus-n1gud_dcvje-unsplash.jpg);
+}
+.parrafos{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+.parrafo1{
+  width: 50%;
+
+}
+
+/*DESKTOP STYLES*/
+@media all and (min-width: 1200px) {
+  .container {
+    background-color: fuchsia;
+  }
+  .image {
+    background-image: url(../images/rsz_samuel-regan-asante-hvxxvkrazyw-unsplash.jpg);
+  }
+.parrafo1{
+  width: 25%;
+  }
+}
