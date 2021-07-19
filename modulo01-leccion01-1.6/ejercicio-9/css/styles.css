@@ -14,7 +14,6 @@ body {
   flex-direction: column;
   position: relative;
   border: 5px solid fuchsia;
-  height: 100vh;
 }
 .green-section {
   display: flex;
@@ -53,7 +52,6 @@ body {
   }
   .green-section {
     position: absolute;
-    align-self: start;
     width: 25%;
   }
   .yellow-section {
@@ -62,11 +60,23 @@ body {
     width: 70%;
     display: flex;
   }
+
   .lead-heading {
     position: absolute;
   }
   .lead-text {
+    margin-bottom: 0px;
     position: relative;
     flex-direction: column;
+    flex: 60%;
+    margin-top: 30px;
+  }
+  .lead-orange-box {
+    position: relative;
+    flex-direction: column;
+    flex: 40%;
+    width: 200px;
+    height: 200px;
+    background-color: orange;
   }
 }
