@@ -57,11 +57,6 @@ hr {
 }
 
 @media all and (min-width: 768px) {
-  footer {
-    display: inline-block;
-    justify-content: space-between;
-  }
-
   .circle {
     position: absolute;
     right: 25px;
