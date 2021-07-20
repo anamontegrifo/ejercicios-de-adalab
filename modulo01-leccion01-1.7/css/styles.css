@@ -55,6 +55,7 @@ hr {
   position: relative;
   text-align: center;
 }
+
 @media all and (min-width: 768px) {
   .circle {
     position: absolute;
