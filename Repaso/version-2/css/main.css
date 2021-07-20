@@ -1,0 +1,52 @@
+/*Reset*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*---------------------*/
+:root {
+  --title-font-size: 30px;
+  --title-font-weight: 800;
+  --color-firered: #cc212a;
+  --size-icon: 52px;
+}
+
+body {
+  color: var(--color-firered);
+  font-family: Montserrat;
+  text-align: center;
+}
+
+.header {
+  border: 5px solid orange;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  font-size: var(--title-font-size);
+  font-weight: var(--title-font-weight);
+}
+.footer {
+  border: 5px solid lightgreen;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  border-top: 4px solid var(--color-firered);
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--size-icon);
+  height: var(--size-icon);
+  background-color: var(--color-firered);
+  color: white;
+  font-weight: 700;
+  border-radius: 50%;
+}
