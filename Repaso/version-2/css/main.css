@@ -7,10 +7,13 @@
 
 /*---------------------*/
 :root {
-  --title-font-size: 30px;
-  --title-font-weight: 800;
+  --title-font-size: 26px;
+  --title-font-weight: 700;
   --color-firered: #cc212a;
-  --size-icon: 52px;
+  --size-icon: 3em;
+  --footer-height: 90px;
+
+  --title-font-tablet: 40px;
 }
 
 body {
@@ -31,22 +34,67 @@ body {
 .title {
   font-size: var(--title-font-size);
   font-weight: var(--title-font-weight);
+  line-height: 0.9;
 }
 .footer {
-  border: 5px solid lightgreen;
   position: fixed;
+  height: var(--footer-height);
   bottom: 0;
-  width: 100vw;
-  border-top: 4px solid var(--color-firered);
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* o width: 100vW */
+  border-top: 3px solid var(--color-firered);
 }
 .icon {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  font-size: 14px;
+  bottom: calc(var(--footer-height) - var(--size-icon) / 2);
   width: var(--size-icon);
   height: var(--size-icon);
   background-color: var(--color-firered);
   color: white;
   font-weight: 700;
   border-radius: 50%;
+}
+.copy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 120px;
+  height: 20px;
+  transform: translate(0, -10px);
+  top: calc(var(--footer-height) / 2);
+  color: gray;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+@media all and (min-width: 768px) {
+  .title {
+    font-size: var(--title-font-tablet);
+  }
+  .footer {
+    display: flex;
+    flex-direction: row;
+  }
+  .icon {
+    font-size: 16px;
+    position: absolute;
+    transform: translate(0px, calc(var(--size-icon) / 2));
+    bottom: calc(var(--footer-height) / 2);
+    right: 25px;
+  }
+  .copy {
+    font-size: 16px;
+    position: absolute;
+    align-content: flex-start;
+    left: 25px;
+  }
 }
