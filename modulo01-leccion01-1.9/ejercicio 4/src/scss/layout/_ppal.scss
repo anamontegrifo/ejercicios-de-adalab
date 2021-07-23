@@ -3,7 +3,7 @@
     width: 100vw;
     position: absolute;
     flex-direction: column;
-    &--article{
+    &__article{
         height: 50vh;
         display: flex;
         text-align: center;
@@ -23,7 +23,7 @@
     justify-content: space-around;
     align-items: center;
     color: $color-primary;
-    &--button{
+    &__button{
         height: 45px;
         width: 80px;
         background-color: $color-secondary;

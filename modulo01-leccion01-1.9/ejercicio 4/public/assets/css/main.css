@@ -24,14 +24,14 @@
   width: 100vw;
   position: absolute;
   flex-direction: column; }
-  .section--article {
+  .section__article {
     height: 50vh;
     display: flex;
     text-align: center;
     padding: 0 15px;
     border-bottom: 3px solid #117A65;
     color: #943126; }
-    .section--article--text {
+    .section__article--text {
       margin: auto; }
 
 .aside {
@@ -41,7 +41,7 @@
   justify-content: space-around;
   align-items: center;
   color: #117A65; }
-  .aside--button {
+  .aside__button {
     height: 45px;
     width: 80px;
     background-color: #943126;
