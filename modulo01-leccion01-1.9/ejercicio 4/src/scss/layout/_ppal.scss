@@ -3,6 +3,7 @@
     width: 100vw;
     position: absolute;
     flex-direction: column;
+    
     &__article{
         height: 50vh;
         display: flex;
@@ -11,6 +12,7 @@
         &:hover{
             border: 5px dotted $color-secondary;    
         }
+
         &--text{
             margin: auto;
             color: $color-secondary;
@@ -21,7 +23,7 @@
             }
         }
     }
-
+}
 
 .aside{
     display: flex;
@@ -53,12 +55,8 @@
         background-color: $color-secondary;
         &:hover{
             background-color: $color-primary;
-            font-size: 2em;
-
-
-            
+            font-size: 2em;    
         }
     }
     
-}
 }

@@ -41,34 +41,35 @@
         color: white;
         background-color: #943126;
         font-size: 2em; }
-  .section .aside {
-    display: flex;
-    height: 30vh;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center; }
-    .section .aside:hover {
-      border: 5px dotted #943126; }
-    .section .aside__title {
-      color: #117A65;
-      padding: 0 10px; }
-      .section .aside__title:hover {
-        color: white;
-        background-color: #117A65;
-        font-size: 2em; }
-    .section .aside__button {
-      height: 45px;
-      padding: 0 5px;
-      text-decoration: none;
-      text-align: center;
-      vertical-align: middle;
-      line-height: 45px;
-      border-radius: 5px;
+
+.aside {
+  display: flex;
+  height: 30vh;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
+  .aside:hover {
+    border: 5px dotted #943126; }
+  .aside__title {
+    color: #117A65;
+    padding: 0 10px; }
+    .aside__title:hover {
       color: white;
-      background-color: #943126; }
-      .section .aside__button:hover {
-        background-color: #117A65;
-        font-size: 2em; }
+      background-color: #117A65;
+      font-size: 2em; }
+  .aside__button {
+    height: 45px;
+    padding: 0 5px;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 45px;
+    border-radius: 5px;
+    color: white;
+    background-color: #943126; }
+    .aside__button:hover {
+      background-color: #117A65;
+      font-size: 2em; }
 
 body {
   font-family: 'PT Sans', sans-serif;
