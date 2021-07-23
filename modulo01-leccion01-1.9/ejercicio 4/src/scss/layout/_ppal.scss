@@ -1,36 +1,37 @@
-.ppal-section {
+.section {
     display: flex;
     width: 100vw;
     position: absolute;
     flex-direction: column;
+    &--article{
+        height: 50vh;
+        display: flex;
+        text-align: center;
+        padding: 0 15px;
+        border-bottom: 3px solid $color-primary;
+        color: $color-secondary;
+        &--text{
+            margin: auto;
+        }
+    }
 }
 
-.ppal-article{
-    height: 50vh;
-    display: flex;
-    text-align: center;
-    flex-grow: 1;
-    padding: 0 15px;
-    border-bottom: 1px solid slategrey;
-}
-.text{
-    margin: auto;
-}
-.aside-section{
+.aside{
     display: flex;
     height: 30vh;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-}
-.button{
-    height: 45px;
-    width: 80px;
-    background-color: red;
-    text-decoration: none;
-    text-align:center;
-    vertical-align: middle;
-    line-height: 45px;
-    border-radius: 5px;
-    color: white;
+    color: $color-primary;
+    &--button{
+        height: 45px;
+        width: 80px;
+        background-color: $color-secondary;
+        text-decoration: none;
+        text-align:center;
+        vertical-align: middle;
+        line-height: 45px;
+        border-radius: 5px;
+        color: white;    
+    }
 }
