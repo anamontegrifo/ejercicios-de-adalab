@@ -7,6 +7,12 @@
     height: 75px;
     width: 100vw;
     color: white;
+    
+    &:hover {
+        background-color: $color-secondary;
+        font-size: 2em;
+
+    }
     @media all and (min-width:768px) {
         height: 100px;
     }

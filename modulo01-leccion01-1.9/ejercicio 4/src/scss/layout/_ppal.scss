@@ -8,13 +8,20 @@
         display: flex;
         text-align: center;
         padding: 0 15px;
-        border-bottom: 3px solid $color-primary;
-        color: $color-secondary;
+        &:hover{
+            border: 5px dotted $color-secondary;    
+        }
         &--text{
             margin: auto;
+            color: $color-secondary;
+            &:hover {
+                color: white;
+                background-color: $color-secondary;
+                font-size: 2em;
+            }
         }
     }
-}
+
 
 .aside{
     display: flex;
@@ -22,16 +29,36 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    color: $color-primary;
-    &__button{
+    &:hover{
+        border: 5px dotted $color-secondary;
+    }
+    &__title{
+        color: $color-primary;
+        padding: 0 10px;
+        &:hover {
+            color: white;
+            background-color: $color-primary;
+            font-size: 2em;
+        }
+    }
+    &__button {
         height: 45px;
-        width: 80px;
-        background-color: $color-secondary;
+        padding: 0 5px;
         text-decoration: none;
         text-align:center;
         vertical-align: middle;
         line-height: 45px;
         border-radius: 5px;
-        color: white;    
+        color: white;  
+        background-color: $color-secondary;
+        &:hover{
+            background-color: $color-primary;
+            font-size: 2em;
+
+
+            
+        }
     }
+    
+}
 }

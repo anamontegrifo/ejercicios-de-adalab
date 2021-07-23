@@ -12,6 +12,9 @@
   height: 75px;
   width: 100vw;
   color: white; }
+  .fixed-header:hover {
+    background-color: #943126;
+    font-size: 2em; }
   @media all and (min-width: 768px) {
     .fixed-header {
       height: 100px; } }
@@ -28,29 +31,44 @@
     height: 50vh;
     display: flex;
     text-align: center;
-    padding: 0 15px;
-    border-bottom: 3px solid #117A65;
-    color: #943126; }
+    padding: 0 15px; }
+    .section__article:hover {
+      border: 5px dotted #943126; }
     .section__article--text {
-      margin: auto; }
-
-.aside {
-  display: flex;
-  height: 30vh;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  color: #117A65; }
-  .aside__button {
-    height: 45px;
-    width: 80px;
-    background-color: #943126;
-    text-decoration: none;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 45px;
-    border-radius: 5px;
-    color: white; }
+      margin: auto;
+      color: #943126; }
+      .section__article--text:hover {
+        color: white;
+        background-color: #943126;
+        font-size: 2em; }
+  .section .aside {
+    display: flex;
+    height: 30vh;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+    .section .aside:hover {
+      border: 5px dotted #943126; }
+    .section .aside__title {
+      color: #117A65;
+      padding: 0 10px; }
+      .section .aside__title:hover {
+        color: white;
+        background-color: #117A65;
+        font-size: 2em; }
+    .section .aside__button {
+      height: 45px;
+      padding: 0 5px;
+      text-decoration: none;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 45px;
+      border-radius: 5px;
+      color: white;
+      background-color: #943126; }
+      .section .aside__button:hover {
+        background-color: #117A65;
+        font-size: 2em; }
 
 body {
   font-family: 'PT Sans', sans-serif;
