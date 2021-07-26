@@ -2,30 +2,68 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
     <title>Formularios</title>
 </head>
 
 <body>
-    <form class="form" action="#" method="post">
+    <main>
+        <form class="form" action="/signup" method="post">
+            <label for="name">Nombre:</label>
+            <input type="text" name="name" id="name" placeholder="Ej: Yanelis" />
 
-        <label for="name">Nombre:</label>
-        <input type="text" name="name" id="name" placeholder="Ej: Yanelis" required>
+            <label for="lastname">Apellidos:</label>
+            <input type="text" name="lastname" id="lastname" placeholder="Ej: Serrano" />
 
-        <label for="lastname">Apellidos:</label>
-        <input type="text" name="lastname" id="lastname" placeholder="Ej: Serrano" required>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="lastname" placeholder="Ej: yanelis@adalab.es" />
 
-        <label for="email">Email</label>
-        <input type="email" name="email" id="lastname" placeholder="Ej: yanelis@adalab.es" required>
+            <label for="password">Contraseña</label>
+            <input pattern="^[0-9]{4}[a-zA-Z]{3}$" type="password" name="password" id="password"
+                placeholder="Ej: 1234ABC" />
 
-        <label for="password">Contraseña</label>
-        <input type="password" name="password" id="password" placeholder="Ej: 123456" required>
+            <label for="age">Edad</label>
+            <input type="number" name="age" id="age" placeholder="Ej: 32" min="18" max="99" />
+            <fieldset class="color-fieldset">
+                Color preferido:
+                <label>
+                    <input type="checkbox" name="color" value="red" />Rojo
+                </label>
+                <label>
+                    <input type="checkbox" name="color" value="green" />Verde
+                </label>
+                <label>
+                    <input type="checkbox" name="color" value="blue" />Azul
+                </label>
+            </fieldset>
+            <fieldset class="sex-fieldset">
+                <legend>Sexo</legend>
+                <label>Mujer
+                    <input type="radio" name="genre" value="woman" />
+                </label>
+                <label>Hombre
+                    <input type="radio" name="genre" value="man" />
+                </label>
+                <label>No declara
+                    <input type="radio" name="genre" value="none" />
+                </label>
+            </fieldset>
+            <select name="age" id="age">
+                <option selected disabled>Rango de edad</option>
+                <option value="1">1-10</option>
+                <option value="2">11-20</option>
+                <option value="3">21-30</option>
 
-    </form>
+            </select>
 
+            <input class="button" type="submit" value="Enviar" />
+
+            <input class="button" type="reset" value="Borrar" />
+        </form>
+    </main>
 </body>
 
 </html>
