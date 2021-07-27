@@ -1,0 +1,25 @@
+.container {
+  margin: 10px;
+  height: 60vh;
+  width: 100vw;
+}
+.item {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.item1 {
+  background-color: lightsalmon;
+}
+.item2 {
+  background-color: rgb(109, 28, 136);
+}
+.item3 {
+  background-color: orangered;
+}
+.item4 {
+  background-color: paleturquoise;
+}
