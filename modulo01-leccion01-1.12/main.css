@@ -1,0 +1,44 @@
+@keyframes intro {
+  from {
+    opacity: 0;
+    transform: scale(10) rotate(-150deg);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+.pop-up {
+  background-color: orange;
+  color: aliceblue;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(300px, 1000px);
+  transition: transform ease 4s, background-color ease 3s;
+}
+.pop-up:hover {
+  background-color: aquamarine;
+  transform: translate(300px, 100px);
+}
+
+.colors {
+  background-color: orange;
+  color: aliceblue;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: intro;
+  animation-delay: 2s;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
