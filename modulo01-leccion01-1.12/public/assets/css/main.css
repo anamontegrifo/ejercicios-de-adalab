@@ -146,20 +146,7 @@ table {
   color: orange;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 2rem;
-  position: absolute;
   -webkit-animation-duration: 5s;
   animation-duration: 5s; }
-
-@-webkit-keyframes intro {
-  from {
-    bottom: 0; }
-  to {
-    bottom: 200px; } }
-
-@keyframes intro {
-  from {
-    bottom: 0; }
-  to {
-    bottom: 200px; } }
 
 /*# sourceMappingURL=main.css.map */
