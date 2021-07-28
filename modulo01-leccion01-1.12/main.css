@@ -35,8 +35,7 @@
   align-items: center;
   animation-name: pop;
   animation-delay: 0.5s;
-  animation-duration: 3s;
-  animation-iteration-count: 1;
+  animation-duration: 2s;
 }
 
 .colors {
