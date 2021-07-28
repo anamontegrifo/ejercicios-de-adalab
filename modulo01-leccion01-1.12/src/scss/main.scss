@@ -1,0 +1,44 @@
+@import 'core/variables';
+@import 'core/reset';
+// @import 'components/code';
+// @import 'components/links';
+@import 'layout/page';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'pages/index';
+
+.main{
+    border: 5px solid lightblue;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    }
+
+
+.pop-up{
+    border: 2px solid orange;
+    width: 300px;
+    height: 200px;
+   line-height: 200px;
+   text-align: center;
+   color: orange;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 2rem;
+   position: absolute;
+animation-duration: 5s;
+   }
+
+   @keyframes intro {
+    from {
+     bottom: 0;
+    }
+  
+    to {
+      bottom: 200px;
+    }
+  }
+
+
