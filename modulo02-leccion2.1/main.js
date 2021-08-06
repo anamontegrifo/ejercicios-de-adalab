@@ -16,3 +16,4 @@ selectName.innerHTML = selectName.innerHTML +  item2.innerHTML
 
 const password = document.querySelector('.password');
 password.innerHTML =  'Mi contraseña es: **********';
+
