@@ -20,3 +20,10 @@ body {
   border-radius: 10px;
   border: none;
 }
+.hidden {
+  display: none;
+}
+
+.redstyle {
+  color: red;
+}
