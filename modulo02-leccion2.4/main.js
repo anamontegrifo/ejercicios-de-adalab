@@ -61,21 +61,30 @@ function multiplication(a, b) {
 multiplication(4, 8);
 console.log(multiplication(4, 8));
 
+
+
+
 //Ejercicio 2
 function average(a, b, c, d) {
     return (a + b + c + d) / 4;
 }
 average(23, 56, 43, 12);
-console.log(average(23, 56, 43, 12));
+console.log(average(29, 51, 43, 12));
+
+
+
 
 //Ejercicio 3
 function totalPrice(a) {
+    const sinIva = (a - (a * 0.21));
+    const iva = (a * 0.21);
+    const totalPrice = (a);
 
-    return (`Precio sin iva: ${a - (a * 0.21)}, IVA: ${a * 0.21} y Total: ${a} `);
+
+    return (`Precio sin iva: ${sinIva}, IVA: ${iva} y Total: ${totalPrice}`);
 
 }
-totalPrice(100);
-console.log(totalPrice(100));
+console.log(totalPrice(800));
 
 //Ejercicio 4
 function oddAndEven(a) {
@@ -86,7 +95,7 @@ function oddAndEven(a) {
         console.log('False')
     }
 }
-oddAndEven(11);
+oddAndEven(12);
 
 
 
