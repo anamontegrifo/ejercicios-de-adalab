@@ -1,0 +1,14 @@
+.red {
+  background-color: red;
+}
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+.js_result {
+  border: 1px solid black;
+  width: 300px;
+}
