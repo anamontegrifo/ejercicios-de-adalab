@@ -16,7 +16,13 @@ body {
 .form__btn {
   width: 60px;
   margin-top: 10px;
-  background-color: aqua;
+  background-color: lightblue;
   border-radius: 10px;
   border: none;
+}
+.text--bold {
+  font-weight: 700;
+}
+.text--error {
+  color: red;
 }
