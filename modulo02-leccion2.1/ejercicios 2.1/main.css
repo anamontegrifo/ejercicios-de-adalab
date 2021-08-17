@@ -1,0 +1,11 @@
+.button {
+  background-color: lightcoral;
+  border: 2px solid chocolate;
+  border-radius: 50px;
+  width: 100px;
+  height: 30px;
+}
+.hidden-button {
+  background-color: lightslategray;
+  border-color: black;
+}
