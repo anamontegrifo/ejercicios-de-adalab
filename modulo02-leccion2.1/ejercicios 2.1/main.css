@@ -5,7 +5,12 @@
   width: 100px;
   height: 30px;
 }
-.hidden-button {
+.off-button {
   background-color: lightslategray;
   border-color: black;
+}
+
+.special-button {
+  background-color: violet;
+  border-color: slateblue;
 }

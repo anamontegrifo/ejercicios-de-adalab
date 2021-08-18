@@ -45,3 +45,16 @@ const changeClass = document.querySelector('.redclass');
 changeClass.classList.add('hidden', 'redstyle');
 changeClass.classList.remove('hidden', 'redclass');
 
+//getElementByID - en desuso
+const mainTitle = document.querySelector('#mainTitle');
+const mainTitle = document.getElementById('mainTitle');
+
+//var - en desuso
+var pageBgColor;
+pageBgColor = '#3d7e9a';
+var DAYS_PER_WEEK = 7; //las constantes en mayúsculas
+
+
+
+
+

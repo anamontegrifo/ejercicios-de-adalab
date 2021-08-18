@@ -47,4 +47,5 @@ numberExercise.innerHTML = numberContent;
 const button1 = document.querySelector('.button-1');
 const button2 = document.querySelector('.button-2');
 
-button1.classList.add('hidden-button');
+button1.classList.add('off-button');
+button2.classList.add('special-button');
