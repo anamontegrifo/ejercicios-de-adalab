@@ -216,6 +216,16 @@ switch (date) {
         console.log('Dormir hasta las 12');
 }
 
+//Módulo (%) - nos da el resto de la división
+0 % 80; // Devuelve 0
+4 % 5; // Devuelve 4
+13 % 5; // Devuelve 3
+9 % 3; // Devuelve 0
+
+
+
+
+
 
 
 
