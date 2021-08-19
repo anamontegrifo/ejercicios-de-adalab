@@ -143,6 +143,36 @@ if (activableSection.classList.contains('pinkText')) {
     activableSection.classList.add('pinkText');
 }
 
+//Operador condicional o ternario (? :)
+const theme = 'hallowen';
+const fontColor = theme === 'hallowen' ? '#ff5722' : '#000';
+
+//Expresiones: unidad de código que produce valor
+
+// myVar;
+
+// 3 + x;
+
+// true ? 'Access allowed' : 'You may not pass';
+
+// '' || 'OneEyedMan';
+
+//Sentencias: realizan acciones
+let avocados;
+const avocadoPrice = 1.5;
+const money = 33;
+
+if (money >= avocadoPrice) {
+    avocados = money / avocadoPrice;
+} else {
+    avocados = 0;
+}
+console.log(avocados);
+
+
+
+
+
 
 
 
