@@ -1,1 +1,7 @@
+.hidden {
+  display: none;
+}
 
+.pinkText {
+  color: fuchsia;
+}

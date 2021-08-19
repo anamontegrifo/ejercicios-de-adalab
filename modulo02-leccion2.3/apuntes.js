@@ -129,6 +129,20 @@ if (elseAge > 30) {
     console.log('Eres un niño entre 0 y 9 años'); //Esta línea se ejecuta solo si se NO cumplen ninguna de las condiciones anteriores
 }
 
+//classList.contains
+
+const activableSection = document.querySelector('.colour-section');
+
+// Si contiene la clase pinkText
+if (activableSection.classList.contains('pinkText')) {
+    // Elimina la clase
+    activableSection.classList.remove('pinkText');
+} else {
+    // Si no, en caso contrario
+    // Añade la clase pinkText
+    activableSection.classList.add('pinkText');
+}
+
 
 
 

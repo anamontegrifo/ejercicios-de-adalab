@@ -1,7 +1,7 @@
 'use strict';
 const box = document.querySelector('.box');
-const title = document.querySelector('h2');
-const parrafo = document.querySelector('p');
+const title = document.querySelector('.title');
+const parrafo = document.querySelector('.text');
 
 if (box.classList.contains('success')) {
     title.innerHTML = 'Correcto';
