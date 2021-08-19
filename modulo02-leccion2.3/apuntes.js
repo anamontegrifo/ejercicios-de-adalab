@@ -89,6 +89,24 @@ const moderatorText2 = isModerator2 && 'moderadora';
 // Como la primera expresión es `falsy`, se devuelve la segunda expresión
 welcomeMessageElement.innerHTML = `Bienvenida ${adminText2 || moderatorText2}. ¡Es genial verte de nuevo!`;
 
+//Condicionales
+
+//If
+const myAge = 35;
+
+if (myAge > 30) {
+    console.log('Tienes más de 30 años'); //Esta línea se ejecuta solo si se cumple la condición
+}
+
+//If... else
+const yourAge = 29;
+
+if (yourAge > 30) {
+    console.log('Tienes más de 30 años'); //Esta línea se ejecuta solo si se cumple la condición
+} else {
+    console.log('Como mucho tienes 30 años'); //Esta línea se ejecuta solo si NO se cumple la condición
+}
+
 
 
 
