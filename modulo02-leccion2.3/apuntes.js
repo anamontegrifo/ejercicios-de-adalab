@@ -107,6 +107,29 @@ if (yourAge > 30) {
     console.log('Como mucho tienes 30 años'); //Esta línea se ejecuta solo si NO se cumple la condición
 }
 
+//If... else if...
+const otherAge = 35;
+
+if (otherAge > 30) {
+    console.log('Tienes más de 30 años'); // Esta línea se ejecuta solo si se cumple la condición
+} else if (otherAge >= 20) {
+    console.log('Tienes entre 20 y 30 años'); // Esta línea se ejecuta solo si se NO cumple la primera condición y SÍ se cumple la segunda
+}
+
+//If... else if... else
+const elseAge = 5;
+
+if (elseAge > 30) {
+    console.log('Tienes más de 30 años'); //Esta línea se ejecuta solo si se cumple la condición
+} else if (elseAge >= 20) {
+    console.log('Tienes entre 20 y 30 años'); //Esta línea se ejecuta solo si se NO cumple la primera condición y SÍ se cumple la segunda
+} else if (elseAge >= 10) {
+    console.log('Tienes entre 10 y 19 años'); //Esta línea se ejecuta solo si se NO cumplen la primeras condiciones y SÍ se cumple la última
+} else {
+    console.log('Eres un niño entre 0 y 9 años'); //Esta línea se ejecuta solo si se NO cumplen ninguna de las condiciones anteriores
+}
+
+
 
 
 
