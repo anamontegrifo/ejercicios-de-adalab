@@ -71,24 +71,6 @@ console.log('totalAges', totalAges);
 console.log('Exercises completed', sum2(2, 6, 9));
 
 
-//Ejercicio 1
-function multiplication(a, b) {
-    return a * b;
-}
-multiplication(4, 8);
-console.log(multiplication(4, 8));
-
-
-
-
-//Ejercicio 2
-function average(a, b, c, d) {
-    return (a + b + c + d) / 4;
-}
-average(23, 56, 43, 12);
-console.log(average(29, 51, 43, 12));
-
-
 
 
 //Ejercicio 3
