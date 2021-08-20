@@ -1,12 +1,30 @@
 'use strict';
 
-//declarar una función
+//DECLARAR UNA FUNCIÓN
 function saludar() {
     console.log('Hola');
 }
 
-//ejecutar o invocar a la función
+//Función sin parámetros
+function hi() {
+    return "Hola";
+}
+
+//Función con parámetros
+function sum(a, b) {
+    return a + b;
+}
+
+
+//EJECUTAR O INVOCAR UNA FUNCIÓN
 saludar();
+
+console.log(hi());
+//Muestra en la consola la palabra 'Hola'
+
+console.log(sum(1, 4));
+//Muestra en la consola un 5
+
 
 //con parámetros
 function saludarUsuario(user) {
@@ -22,20 +40,19 @@ console.log(suma(2, 3));
 
 suma(2, 4);
 
-//crear funciones sin nombre, usando el nombre de la variable
-const sum = function (a, b) {
+//CREAR FUNCIONES ANÓNIMAS, DENTRO DE UNA VARIABLE
+const sum1 = function (a, b) {
     return a + b;
 }
-sum(2, 6);
-console.log(sum(2, 6));
+sum1(2, 6);
+console.log(sum1(2, 6));
 
-//Valores de retorno
+//PARÁMETROS Y VALORES DE RETORNO
 function operation(a, b) {
     const result = a + b;
 
     return result;
 }
-console.log(operation(2, 9));
 
 const operationResult = operation(3, 4); //operationResult vale 7
 console.log(operationResult);
