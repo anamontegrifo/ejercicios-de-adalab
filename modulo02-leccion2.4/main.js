@@ -75,16 +75,7 @@ console.log('Exercises completed', sum2(2, 6, 9));
 
 
 
-//Ejercicio 4
-function oddAndEven(a) {
-    if (a % 2 === 0) {
-        console.log('True');
-    }
-    else {
-        console.log('False')
-    }
-}
-oddAndEven(12);
+
 
 
 

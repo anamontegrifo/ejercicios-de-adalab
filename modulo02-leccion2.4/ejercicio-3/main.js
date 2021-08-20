@@ -4,10 +4,10 @@
 function totalPrice(a) {
     const sinIva = (a - (a * 0.21));
     const iva = (a * 0.21);
-    const totalPrice = (a);
+    const fullPrice = (a);
 
 
-    return (`Precio sin iva: ${sinIva}, IVA: ${iva} y Total: ${totalPrice}`);
+    return (`Precio sin iva: ${sinIva}, IVA: ${iva} y Total: ${fullPrice}`);
 
 }
 
