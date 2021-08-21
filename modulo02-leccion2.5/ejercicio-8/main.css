@@ -1,0 +1,17 @@
+.js_button {
+  font-size: 30px;
+  font-weight: 700;
+  border: none;
+  border-radius: 50px;
+  width: 200px;
+  height: 50px;
+}
+
+.color1 {
+  background-color: lightskyblue;
+  color: steelblue;
+}
+.color2 {
+  background-color: lightcoral;
+  color: darkred;
+}
