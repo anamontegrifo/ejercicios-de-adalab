@@ -1,0 +1,14 @@
+body {
+  margin: 30px;
+  font-family: Arial, san-serif;
+}
+
+.button {
+  background-color: aquamarine;
+  border: none;
+  border-radius: 30px;
+  width: 200px;
+  height: 50px;
+  color: darkblue;
+  font-size: 20px;
+}
