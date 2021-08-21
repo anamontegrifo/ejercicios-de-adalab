@@ -70,9 +70,41 @@ console.log('totalAges', totalAges);
 
 console.log('Exercises completed', sum2(2, 6, 9));
 
+//Ámbito de las variables
 
+// Usamos una variable de ámbito global
+const secretLetter = "y";
+function mySecretLetter() {
+    return secretLetter;
+}
+console.log(mySecretLetter()); // devuelve "y"
+console.log(secretLetter); // devuelve "y"
 
+// modificamos una variable de ámbito global
+let secretLetter = "y";
+function mySecretLetter() {
+    secretLetter = "x";
+    return secretLetter;
+}
+console.log(mySecretLetter()); // devuelve "x"
+console.log(secretLetter); // devuelve "x"
 
+// Usamos una variable de ámbito local que se llama igual que la global
+const secretLetter = "y";
+function mySecretLetter() {
+    const secretLetter = "x";
+    return secretLetter;
+}
+console.log(mySecretLetter()); // devuelve "x"
+console.log(secretLetter); // devuelve "y"
+
+// intentamos usar una variable local fuera de su ámbito
+function mySecretLetter() {
+    const secretLetter = "x";
+    return secretLetter;
+}
+console.log(mySecretLetter()); // devuelve "x"
+console.log(secretLetter); // da un error porque la variable solo está definida dentro del bloque de la función
 
 
 
