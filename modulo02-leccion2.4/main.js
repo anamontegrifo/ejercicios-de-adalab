@@ -81,33 +81,68 @@ console.log(mySecretLetter()); // devuelve "y"
 console.log(secretLetter); // devuelve "y"
 
 // modificamos una variable de ámbito global
-let secretLetter = "y";
-function mySecretLetter() {
-    secretLetter = "x";
-    return secretLetter;
+let secretLetter2 = "y";
+function mySecretLetter2() {
+    secretLetter2 = "x";
+    return secretLetter2;
 }
-console.log(mySecretLetter()); // devuelve "x"
-console.log(secretLetter); // devuelve "x"
+console.log(mySecretLetter2()); // devuelve "x"
+console.log(secretLetter2); // devuelve "x"
 
 // Usamos una variable de ámbito local que se llama igual que la global
-const secretLetter = "y";
-function mySecretLetter() {
-    const secretLetter = "x";
-    return secretLetter;
+const secretLetter3 = "y";
+function mySecretLetter3() {
+    const secretLetter3 = "x";
+    return secretLetter3;
 }
-console.log(mySecretLetter()); // devuelve "x"
-console.log(secretLetter); // devuelve "y"
+console.log(mySecretLetter3()); // devuelve "x"
+console.log(secretLetter3); // devuelve "y"
 
 // intentamos usar una variable local fuera de su ámbito
-function mySecretLetter() {
-    const secretLetter = "x";
-    return secretLetter;
+function mySecretLetter4() {
+    const secretLetter4 = "x";
+    return secretLetter4;
 }
-console.log(mySecretLetter()); // devuelve "x"
-console.log(secretLetter); // da un error porque la variable solo está definida dentro del bloque de la función
+console.log(mySecretLetter4()); // devuelve "x"
+// console.log(secretLetter4); // da un error porque la variable solo está definida dentro del bloque de la función
+
+//ARROW FUNCTIONS
+const sum3 = (a, b) => {
+    return a + b;
+};
+
+// y la ejecutamos usando la variable a la que la hemos asignado:
+sum3(2, 3); // devuelve 5;
+
+// Anteriormente vimos esta misma función con la forma "normal"
+const sum4 = function (a, b) {
+    return a + b;
+};
+
+//Paréntesis opcionales
+const getWaitingTime = minutes => {
+    return `Please, wait ${minutes} minutes`;
+};
+console.log(getWaitingTime(10));
+
+// equivale a
+const getWaitingTime2 = (minutes) => {
+    return `Please, wait ${minutes} minutes`;
+};
+console.log(getWaitingTime2(10));
 
 
+//Llaves y return implícito
+const getWaitingTime3 = (minutes) => `Please, wait ${minutes} minutes`;
+console.log(getWaitingTime3(4));
+// devuelve "Please, wait 4 minutes"
 
+// equivale a
+const getWaitingTime4 = (minutes) => {
+    return `Please, wait ${minutes} minutes`;
+};
+console.log(getWaitingTime4(4));
+// devuelve "Please, wait 4 minutes"
 
 
 

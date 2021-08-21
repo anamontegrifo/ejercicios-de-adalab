@@ -8,9 +8,9 @@ function mySecretLetter() {
     secretLetter = "x";
     return secretLetter;
 }
-console.log(mySecretLetter()); // devuelve "x"
-console.log(secretLetter); // devuelve "x"
-//Así nos devuelve el valor de la variable después de ser modificada dentro de la función, al estar declarada en el console.log anterior.
+// console.log(mySecretLetter()); // devuelve "x"
+// console.log(secretLetter); // devuelve "x"
+// //Así nos devuelve el valor de la variable después de ser modificada dentro de la función, al estar declarada en el console.log anterior.
 
 console.log(secretLetter); // devuelve "x"
 console.log(mySecretLetter()); // devuelve "x"
