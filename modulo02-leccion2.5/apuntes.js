@@ -27,3 +27,15 @@ button.addEventListener('click', function showAlert() {
 //y con una arrow function
 button.addEventListener('click', () => console.log('alerta'));
 
+
+//EVENTOS COMO ARGUMENTO DE LAS FUNCIONES
+
+const buttonElement = document.querySelector('.button');
+
+function handleButtonClick(event) {
+    console.log(event);
+}
+
+buttonElement.addEventListener('click', handleButtonClick);
+
+
