@@ -26,3 +26,4 @@ button.addEventListener('click', function showAlert() {
 
 //y con una arrow function
 button.addEventListener('click', () => console.log('alerta'));
+
