@@ -38,4 +38,13 @@ function handleButtonClick(event) {
 
 buttonElement.addEventListener('click', handleButtonClick);
 
+//event.currentTarget - contiene el elemento sobre el que pusimos el listener
+
+const buttonElement2 = document.querySelector('.button');
+
+function handleButtonClick(event) {
+    console.log(event.currentTarget);
+}
+
+buttonElement2.addEventListener('click', handleButtonClick);
 
