@@ -46,3 +46,10 @@ adalaber3.isMarried = false;
 // Muestra en la consola 31
 console.log(adalaber3.age);
 
+//MÉTODOS - funciones asociadas a la propiedad de un objeto
+const adalaber4 = {};
+adalaber4.name = 'María';
+adalaber4.speak = phrase => `Yo digo: ${phrase}`;
+
+// Muestra en la consola 'Yo digo: Hola'
+console.log(adalaber4.speak('Hola'));
