@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  font-family: Arial, san-serif;
+}
+.header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  background-color: blanchedalmond;
+}
+.nav {
+  border: 2px solid black;
+}
+.nav__list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.nav__item {
+  padding: 10px;
+}

@@ -67,4 +67,7 @@ strawberry.addEventListener('click', handleFruitClick);
 banana.addEventListener('click', handleFruitClick);
 kiwi.addEventListener('click', handleFruitClick);
 
+//event.preventDefault()
+
+
 
