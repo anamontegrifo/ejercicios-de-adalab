@@ -6,3 +6,7 @@
 .fruit--selected {
   border-bottom: 3px solid #64dac4; /* green */
 }
+
+.btn {
+  font-size: 24px;
+}

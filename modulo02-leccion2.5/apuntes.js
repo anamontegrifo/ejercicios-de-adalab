@@ -69,5 +69,23 @@ kiwi.addEventListener('click', handleFruitClick);
 
 //event.preventDefault()
 
+function handleLink(event) {
+    event.preventDefault();
+    console.log('Esta función evita acceder al link');
+}
+
+//removeEventListener
+const buttonElement3 = document.querySelector('.alert');
+buttonElement.removeEventListener('click', showAlert);
 
 
+
+//event.target - elemento sobre el que ha sucedido el evento
+const btnEl = document.querySelector('.btn');
+
+const handleBtnClick = event => {
+    console.log(event.currentTarget);
+    console.log(event.target);
+};
+
+btnEl.addEventListener('click', handleBtnClick);
