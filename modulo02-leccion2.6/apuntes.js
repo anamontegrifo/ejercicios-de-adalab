@@ -53,3 +53,13 @@ adalaber4.speak = phrase => `Yo digo: ${phrase}`;
 
 // Muestra en la consola 'Yo digo: Hola'
 console.log(adalaber4.speak('Hola'));
+
+//THIS - acceder al resto de propiedades de un objeto desde un método
+const adalaber5 = {};
+adalaber5.name = 'María';
+adalaber5.sayHello = function () {
+    return 'Hola, me llamo ' + this.name;
+};
+
+// Muestra en la consola 'Hola, me llamo María'
+console.log(adalaber5.sayHello());
