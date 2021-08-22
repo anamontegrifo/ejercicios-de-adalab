@@ -1,43 +1,19 @@
 'use strict';
 
-const input = document.querySelector('.nombre');
+const adalaber = {
+    name: 'Susana',
+    age: 34,
+    job: 'periodista'
 
-//Objetos literales. Declaración e inicialización:
-const gato1 = {
-    nombre: 'Missy',
-    color: 'negro',
-    numeroPatas: 4,
-    comidaFavorita: 'Lasaña'
 };
+console.log(`Mi nombre es ${adalaber.name}, tengo ${adalaber.age} años y soy ${adalaber.job}`)
 
-//Objetos. Declarar e inicializar vacío
+const adalaber2 = {
+    name: 'Rocío',
+    age: 25,
+    job: 'actriz'
+}
 
-const gato2 = {}
-
-//así:
-gato2['nombre'] = 'Missy';
-gato2['color'] = 'negro';
-
-//o así:
-gato2.nombre = 'Missy';
-gato2.color = 'negro';
-gato2.numeroPatas = 4;
-gato2.comidaFavorita = 'Lasaña';
-
-//otra manera de inicializar / usar propiedades
-
-const propiedadAPreguntar = 'nombre';
-
-gato2[propiedadAPreguntar] = input.value;
-gato2['nombre'] = input.value;
-
-//Modificar
-gato2.comidaFavorita = 'Sardinas';
-
-elemento.innerHTML = 'Su comida favorita es ${gato2.comidaFavorita}';
-
-
-
-
+console.log(`Mi nombre es ${adalaber2.name}, tengo ${adalaber2.age} años y soy ${adalaber2.job}`)
 
 
