@@ -202,14 +202,4 @@ for (let item in userData) {
 
 
 
-//ejercicio 5
-
-const myNumbers = [25, 5, 65, 40, 70];
-
-let add = 0;
-
-for (let i = 0; i < myNumbers.length; i++) {
-    add += myNumbers[i] / 5;
-}
-console.log('La media de mis números es: ' + add);
 
