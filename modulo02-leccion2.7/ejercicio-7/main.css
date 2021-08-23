@@ -1,0 +1,27 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.fieldset {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  background-color: #76d7c4;
+}
+.input {
+  height: 20px;
+  margin: 5px 0;
+  border-radius: 25px;
+  padding: 0 5px;
+  color: #117a65;
+}
+
+.button {
+  width: 100px;
+  height: 30px;
+  border-radius: 25px;
+  background-color: #117a65;
+  border: none;
+  color: white;
+  margin-top: 15px;
+}

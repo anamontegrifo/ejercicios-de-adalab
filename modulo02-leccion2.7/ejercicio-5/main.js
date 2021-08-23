@@ -42,3 +42,4 @@ function average(myNumbers) {
     console.log('La media de mis números es: ' + media);
 }
 average(myNumbers);
+
