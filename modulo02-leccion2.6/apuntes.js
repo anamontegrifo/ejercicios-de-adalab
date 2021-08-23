@@ -63,3 +63,6 @@ adalaber5.sayHello = function () {
 
 // Muestra en la consola 'Hola, me llamo María'
 console.log(adalaber5.sayHello());
+
+
+//EVENT
