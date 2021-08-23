@@ -64,3 +64,21 @@ adalaber5.sayHello = function () {
 // Muestra en la consola 'Hola, me llamo María'
 console.log(adalaber5.sayHello());
 
+
+//LOS OBJETOS ASIGNADOS A VARIABLES NO ESTÁN GUARDADOS EN ELLAS, SOLO HAY UN ENLACE A ESE OBJETO. SI CREAMOS OTRA VARIABLE DESDE LA NUESTRA APUNTARÁ AL MISMO OBJETO
+const adalaberA = {
+    name: 'Rosa'
+};
+adalaberA.name; // Rosa
+
+// Creamos una nueva variable que apunta al mismo objeto
+const adalaberB = adalaberA;
+adalaberB.name; // Rosa
+
+// Cambiamos la propiedad `name`
+adalaberA.name = 'Rocío';
+
+// Al acceder al objeto el nombre es el nuevo
+adalaberA.name; //Rocío
+// Pero también a través de la otra variable 😱
+adalaberB.name; //Rocío
