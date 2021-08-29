@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.myDay {
+  width: 200px;
+  height: 200px;
+  font-size: 100px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+.button {
+  width: 70px;
+  height: 25px;
+  border-radius: 5px;
+  line-height: 20px;
+  border: none;
+  padding: 0 10px;
+  box-shadow: 1px 1px 5px #666;
+}
+
+.selectButton {
+  margin-right: 10px;
+}
+
+.submitButton {
+  background-color: steelblue;
+  color: white;
+}
+
+.yellowBack {
+  background-color: #ffcc00;
+}
+
+.redBack {
+  background-color: #ff9900;
+}
