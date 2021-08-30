@@ -1,8 +1,6 @@
 "use strict";
 
 //Ejercicio 1
-console.log(1 + 2);
-
 const numberA = 7;
 const numberB = 19;
 
@@ -11,9 +9,8 @@ console.log(numberA + numberB);
 
 //Ejercicio 2
 const superWave = document.querySelector('.super-wave');
-console.log(superWave);
 superWave.classList.add('wave');
-superWave.classList.toggle('wave');
+
 
 //Ejercicio 3
 const priceKiwi = 5;
@@ -29,7 +26,7 @@ const totalPear = purchasedPear * pricePear;
 const totalGrape = pruchasedGrape * priceGrape;
 
 const totalPurchase = totalKiwi + totalPear + totalGrape;
-console.log(totalPurchase);
+console.log('La fruta ha costado ' + totalPurchase + ' euros');
 
 //Ejercicio 4
 
@@ -85,12 +82,11 @@ const partnerContainer = document.querySelector('.js-partner');
 let pairName = 'Leticia Fernández Sánchez';
 pairName = 'Sara García';
 
-partnerContainer.innerHTML = `El nombre de mi compañera es ${pairName} y esta compuesto por ${pairName.length} caracteres.`;
+partnerContainer.innerHTML = `El nombre de mi compañera es ${pairName} y está compuesto por ${pairName.length} caracteres.`;
 
 //Ejercicio 10
 
 let myAge = document.querySelector('.user__age');
-console.log(myAge.innerHTML);
 const daysXYear = 365;
 const hoursXDay = 24;
 
