@@ -15,6 +15,12 @@ console.log(arr2.length);
 console.log(arr2);
 
 
+//REVERSE
+const arr3 = [1, 2, 3];
+console.log(arr3.reverse()); // Loguea 3,2,1
+console.log(arr3); // Loguea también 3,2,1 porque reverse modifica arr
+
+
 
 
 
