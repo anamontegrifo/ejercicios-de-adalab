@@ -16,19 +16,18 @@ function getEl(selector) {
 let textEl = getEl('.text');
 let newNumber = parseInt(textEl.innerHTML);
 
-textEl.innerHTML = 235;
+textEl.innerHTML = 24;
 newNumber = textEl.innerHTML;
 
 console.log(newNumber);
 
 function oddAndEven(a) {
-    const number = (a);
 
     if (a % 2 === 0) {
-        console.log(`${number} is an even number`);
+        console.log(`${a} is an even number`);
     }
     else {
-        console.log(`${number} is not an even number`);
+        console.log(`${a} is not an even number`);
     }
 }
 oddAndEven(newNumber);
