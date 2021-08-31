@@ -7,12 +7,12 @@ const adalaber = {
 };
 
 adalaber.run = phrase => 'Estoy corriendo';
-
 console.log(adalaber.run());
 
-adalaber.runAMarathon = distance => 50;
+adalaber.runAMarathon = distance => `Estoy corriendo un maratón de ${distance} kilómetros`;
+console.log(adalaber.runAMarathon(50));
 
-console.log(`${adalaber.run()} un maratón de ${adalaber.runAMarathon()} kilómetros.`);
+
 
 
 
