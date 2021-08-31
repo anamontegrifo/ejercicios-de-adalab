@@ -5,10 +5,10 @@ const profileB = document.querySelector('.teacher--tuerto');
 const profileC = document.querySelector('.teacher--nasi');
 
 function changeStyle(event) {
-    const selectedTeacher = event.currentTarget;
-    const addOrRemove = selectedTeacher.querySelector('.favorite');
 
-    selectedTeacher.classList.toggle('teacher--selected');
+    event.currentTarget.classList.toggle('teacher--selected');
+
+    const addOrRemove = event.currentTarget.querySelector('.favorite');
     if (addOrRemove.innerHTML === 'Añadir') {
         addOrRemove.innerHTML = 'Quitar';
     }
