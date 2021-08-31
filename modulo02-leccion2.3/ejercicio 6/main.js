@@ -2,10 +2,10 @@
 
 
 const avocadoPrice = 1.5;
-const money = 50;
+const money = 1;
 
-let avocados = money >= avocadoPrice ? money / avocadoPrice : 0;
-console.log(avocados);
+let avocados = money >= avocadoPrice ? console.log(`Puedes comprar ${money / avocadoPrice} aguacates`) : console.log(`No puedes comprar aguacates`);;
+
 
 
 
