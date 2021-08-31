@@ -14,5 +14,5 @@ user.lastName = 'Pérez';
 user.age = user.age + 1;
 
 
-console.log(`El usuario de llama ${user.firstName} ${user.lastName}, tiene ${user.age} años y es ${user.job}`);
+console.log(`El usuario se llama ${user.firstName} ${user.lastName}, tiene ${user.age} años y es ${user.job}`);
 
