@@ -1,18 +1,20 @@
 'use strict';
 
-const userName = 'Ana';
-const printMessage = document.querySelector('.js__name');
-let inputName = 'Raquel'
-inputName = 'ana';
-inputName = 'Sofía';
-inputName = 'Ana';
+const firstUSer = 'ana'
+const secondUSer = 'manuela'
+let inputUser = 'Manuela';
+inputUser = "Sara";
+inputUser = 'Ana';
 
-if (inputName.toLowerCase() === userName.toLowerCase()) {
-    console.log(`Bienvenida ${inputName}`);
-    printMessage.innerHTML = `Bienvenida ${inputName}`;
+const printMessage = document.querySelector('.js__name');
+
+if (inputUser.toLowerCase() === firstUSer || inputUser.toLowerCase() === secondUSer) {
+    console.log(`Bienvenida ${inputUser}`);
+    printMessage.innerHTML = `Bienvenida ${inputUser}`;
 
 }
 else {
-    console.log(`Lo siento ${inputName}, pero el usuario que has introducido es erróneo`)
-    printMessage.innerHTML = `Lo siento ${inputName}, pero el usuario que has introducido es erróneo`;
+    console.log(`Lo siento ${inputUser}, pero el usuario que has introducido es erróneo`)
+    printMessage.innerHTML = `Lo siento ${inputUser}, pero el usuario que has introducido es erróneo`;
 }
+
