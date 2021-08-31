@@ -5,6 +5,7 @@ const theButterFlyEffect = 'The butterfly effect';
 const eternalSunshineOfTheSM = 'Eternal sunshine of the spotless mind';
 const blueVelvet = 'Blue velvet';
 const split = 'Split';
+
 const button = document.querySelector('.button');
 const moviesList = document.querySelector('.moviesList');
 
