@@ -9,7 +9,7 @@ body {
   align-items: center;
   justify-content: space-evenly;
 }
-.myDay {
+.face {
   width: 200px;
   height: 200px;
   font-size: 100px;
@@ -27,19 +27,16 @@ body {
   box-shadow: 1px 1px 5px #666;
 }
 
-.selectButton {
-  margin-right: 10px;
-}
-
 .submitButton {
   background-color: steelblue;
   color: white;
+  margin-left: 10px;
 }
 
 .yellowBack {
   background-color: #ffcc00;
 }
 
-.redBack {
+.orangeBack {
   background-color: #ff9900;
 }
