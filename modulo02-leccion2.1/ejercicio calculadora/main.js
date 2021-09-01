@@ -8,6 +8,7 @@ const add = function () {
     let numberAValue = numberA.value;
     numberAValue = parseInt(numberAValue);
 
+    console.log(numberAValue)
     let numberBValue = numberB.value;
     numberBValue = parseInt(numberBValue);
 
