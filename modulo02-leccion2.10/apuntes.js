@@ -25,4 +25,20 @@ function getEmoji() {
 }
 document.querySelector('.js-emoji').addEventListener("click", getEmoji);
 
+//EJEMPLO DE JSON que devuelve el Dog CEO API:
+// {
+//     "status": "success",
+//         "message": "https://dog.ceo/api/img/terrier-australian/n02096294_4492.jpg"
+// }
 
+function getDogImage() {
+    fetch("https://dog.ceo/api/breeds/image/random")
+        .then(response => response.json())
+        .then(data => {
+            const img = document.querySelector("img");
+            img.src = data.message;
+            img.alt = "Un perro";
+        });
+}
+const btn = document.querySelector(".js-dog");
+btn.addEventListener("click", getDogImage);
