@@ -24,7 +24,20 @@ function getReverse() {
 getReverse();
 
 
-
+// let acc = 0;
+// const myArrayLength = 100;
+// function geta100Numbers(){
+//     for (let i=0; i<myArrayLength; i++){
+//         acc++
+//         myArray.push(acc);
+//     }
+//     return myArray;
+// }
+// function getReversed100Numbers (){
+//     const newArray = geta100Numbers();
+//     return newArray.reverse();
+// }
+// console.log(getReversed100Numbers());
 
 
 
