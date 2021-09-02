@@ -10,8 +10,7 @@ const tasks = [
     {
         name: 'Aprender cómo se realizan las peticiones al servidor en JavaScript',
         completed: false
-    },
-    { name: 'Recoger setas en el campo', completed: true },
+    }
 
 ];
 
@@ -32,10 +31,10 @@ for (const data of tasks) {
 for (const data of tasks) {
     //esto equivale a (data.completed === true)
     if (data.completed) {
-        const html = `<li class="completed">${data.name}<input type="checkbox" value="checked" checked></li>`;
+        const html = `<li class="js-item completed">${data.name}<input type="checkbox" value="checked" checked></li>`;
         listInput.innerHTML += html;
     } else {
-        const html = `<li>${data.name}<input type="checkbox" value=""></li>`;
+        const html = `<li> class="js-item"${data.name}<input type="checkbox" value="unchecked"></li>`;
         listInput.innerHTML += html;
     }
 }
@@ -48,8 +47,29 @@ function handleComplete(ev) {
 
     ev.target.classList.toggle('completed');
 }
+
+
+
+
+const itemTask = document.querySelector('.js-item');
+
+
+function handleCheckbox(ev) {
+    console.log(ev.currentTarget);
+    console.log(ev.target);
+
+    if (ev.target.value === 'checked') {
+        ev.currentTarget.classList.toggle('completed');
+        ev.target.value('unchecked');
+
+    } else if (ev.target.value === 'unchecked') {
+        ev.currentTarget.classList.toggle('completed');
+        ev.target.value('checked');
+    }
+}
+
 list.addEventListener('click', handleComplete);
-listInput.addEventListener('click', handleComplete);
+itemTask.addEventListener('click', handleCheckbox);
 
 
 
