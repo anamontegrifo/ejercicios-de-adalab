@@ -47,7 +47,7 @@ for (const data of tasks) {
         const html = `<li class="js-item lineTrough">${data.name}<input type="checkbox" value="checked" checked></li>`;
         listInput.innerHTML += html;
     } else {
-        const html = `<li> class="js-item"${data.name}<input type="checkbox" value="unchecked"></li>`;
+        const html = `<li class="js-item">${data.name}<input type="checkbox" value="unchecked"></li>`;
         listInput.innerHTML += html;
     }
 }
@@ -59,16 +59,16 @@ function handleCheckbox(ev) {
 
     if (ev.target.value === 'checked') {
         ev.currentTarget.classList.toggle('lineTrough');
-        ev.target.value('unchecked');
-        data.completed = false;
+        ev.target.value = ('unchecked');
+
 
     } else if (ev.target.value === 'unchecked') {
         ev.currentTarget.classList.toggle('lineTrough');
-        ev.target.value('checked');
-        data.completed = true;
+        ev.target.value = ('checked');
     }
 }
 
+console.log(tasks);
 list.addEventListener('click', handleComplete);
 itemTask.addEventListener('click', handleCheckbox);
 
