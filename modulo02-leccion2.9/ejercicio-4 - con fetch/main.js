@@ -16,9 +16,6 @@ function handleCheckbox(ev) {
     console.log(ev.target.parentNode.querySelector('label'));
     const labelSister = ev.target.parentNode.querySelector('label');
     labelSister.classList.toggle('completed');
-
-
-
 }
 
 function render() {
@@ -38,7 +35,6 @@ function render() {
 
     for (const eachInput of allInput) {
         eachInput.addEventListener('click', handleCheckbox);
-
     }
 }
 
