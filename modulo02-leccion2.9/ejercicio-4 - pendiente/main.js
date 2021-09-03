@@ -20,7 +20,7 @@ for (const data of tasks) {
 
     //esto equivale a (data.completed === true)
     if (data.completed) {
-        const html = `<li class="completed">${data.name}</li> `;
+        const html = `<li class="lineTrough">${data.name}</li> `;
         list.innerHTML += html;
     } else {
         const html = `<li>${data.name}</li> `;
@@ -28,43 +28,44 @@ for (const data of tasks) {
     }
 }
 
+function handleComplete(ev) {
+
+    console.log(ev.currentTarget);
+    console.log(ev.target);
+
+    ev.target.classList.toggle('lineTrough');
+}
+
+
+//segunda parte
+
+
+
 for (const data of tasks) {
     //esto equivale a (data.completed === true)
     if (data.completed) {
-        const html = `<li class="js-item completed">${data.name}<input type="checkbox" value="checked" checked></li>`;
+        const html = `<li class="js-item lineTrough">${data.name}<input type="checkbox" value="checked" checked></li>`;
         listInput.innerHTML += html;
     } else {
         const html = `<li> class="js-item"${data.name}<input type="checkbox" value="unchecked"></li>`;
         listInput.innerHTML += html;
     }
 }
-
-
-function handleComplete(ev) {
-
-    console.log(ev.currentTarget);
-    console.log(ev.target);
-
-    ev.target.classList.toggle('completed');
-}
-
-
-
-
 const itemTask = document.querySelector('.js-item');
-
 
 function handleCheckbox(ev) {
     console.log(ev.currentTarget);
     console.log(ev.target);
 
     if (ev.target.value === 'checked') {
-        ev.currentTarget.classList.toggle('completed');
+        ev.currentTarget.classList.toggle('lineTrough');
         ev.target.value('unchecked');
+        data.completed = false;
 
     } else if (ev.target.value === 'unchecked') {
-        ev.currentTarget.classList.toggle('completed');
+        ev.currentTarget.classList.toggle('lineTrough');
         ev.target.value('checked');
+        data.completed = true;
     }
 }
 
