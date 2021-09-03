@@ -13,7 +13,11 @@ fetch('http://api.igarrido.es/tasks.json')
 
 
 function handleCheckbox(ev) {
-    ev.currentTarget.classList.toggle('completed');
+    console.log(ev.target.parentNode.querySelector('label'));
+    const labelSister = ev.target.parentNode.querySelector('label');
+    labelSister.classList.toggle('completed');
+
+
 
 }
 
@@ -22,14 +26,14 @@ function render() {
         //esto equivale a (data.completed === true)
         if (data.completed) {
 
-            const html = `<li class="completed js-li"><input type="checkbox" value="checked" checked><label>${data.name}</label></li>`;
+            const html = `<li><input type="checkbox" class="js-input" checked><label class="completed">${data.name}</label></li>`;
             list.innerHTML += html;
         } else {
-            const html = `<li class="js-li"><input type="checkbox" value="unchecked"><label>${data.name}</label></li> `;
+            const html = `<li><input type="checkbox" class="js-input"><label>${data.name}</label></li> `;
             list.innerHTML += html;
         }
     }
-    const allInput = document.querySelectorAll('.js-li');
+    const allInput = document.querySelectorAll('.js-input');
     console.log(allInput);
 
     for (const eachInput of allInput) {

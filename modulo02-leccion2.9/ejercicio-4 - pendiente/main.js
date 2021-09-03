@@ -16,17 +16,6 @@ const tasks = [
 
 howManyTasks.innerHTML = `En el listado hay ${tasks.length} tareas.`
 
-for (const data of tasks) {
-
-    //esto equivale a (data.completed === true)
-    if (data.completed) {
-        const html = `<li class="lineTrough">${data.name}</li> `;
-        list.innerHTML += html;
-    } else {
-        const html = `<li>${data.name}</li> `;
-        list.innerHTML += html;
-    }
-}
 
 function handleComplete(ev) {
 
@@ -44,11 +33,11 @@ function handleComplete(ev) {
 for (const data of tasks) {
     //esto equivale a (data.completed === true)
     if (data.completed) {
-        const html = `<li class="js-item lineTrough">${data.name}<input type="checkbox" value="checked" checked></li>`;
-        listInput.innerHTML += html;
+        const html = `<li class="completed js-li"><input type="checkbox" value="checked" checked><label>${data.name}</label></li>`;
+        list.innerHTML += html;
     } else {
-        const html = `<li class="js-item">${data.name}<input type="checkbox" value="unchecked"></li>`;
-        listInput.innerHTML += html;
+        const html = `<li class="js-li"><input type="checkbox" value="unchecked"><label>${data.name}</label></li> `;
+        list.innerHTML += html;
     }
 }
 const itemTask = document.querySelector('.js-item');
