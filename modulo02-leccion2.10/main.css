@@ -1,3 +1,14 @@
-.highlight {
-  background-color: lightgoldenrodyellow;
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  width: 200px;
+}
+
+.dogBox,
+.breedImage {
+  width: 200px;
 }
