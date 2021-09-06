@@ -28,7 +28,7 @@ if (initialDataText !== null) {
 	for (const id in initialData) {
 		console.log(id);
 
-		const input = document.querySelector('.${id}');
+		const input = document.querySelector(`#${id}`);
 		input.value = initialData[id];
 	}
 }
