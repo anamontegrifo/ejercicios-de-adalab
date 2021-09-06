@@ -3,20 +3,22 @@
 const teacherProfile = document.querySelector('.teachers');
 
 function changeStyle(event) {
+	const child = event.target;
+	const teacher = child.parentNode;
 
-    if (event.target.classList.contains('teacher')) {
-        event.target.classList.toggle('teacher--selected');
-    }
-    if (event.target.classList.contains('favorite')) {
+	teacher.classList.toggle('teacher--selected');
 
-        if (event.target.innerHTML === 'Añadir') {
-            event.target.innerHTML = 'Quitar';
-        }
-        else {
-            event.target.innerHTML = 'Añadir';
-        }
-    }
+	const text = teacher.querySelector('.favorite');
+
+	console.log(child);
+	console.log(teacher);
+	console.log(text);
+
+	if (text.innerHTML === 'Añadir') {
+		text.innerHTML = 'Quitar';
+	} else {
+		text.innerHTML = 'Añadir';
+	}
 }
 
 teacherProfile.addEventListener('click', changeStyle);
-
