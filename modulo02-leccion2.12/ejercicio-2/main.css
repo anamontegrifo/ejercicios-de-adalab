@@ -1,0 +1,12 @@
+.imageBox {
+	display: flex;
+}
+
+.cityImage {
+	margin-top: 30px;
+	height: 200px;
+	border: 2px solid violet;
+}
+.inputCity {
+	width: 200px;
+}
