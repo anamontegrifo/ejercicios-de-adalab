@@ -1,0 +1,18 @@
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  width: 200px;
+}
+
+.dogBox,
+.breedImage,
+.dog1,
+.dog2 {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+}
