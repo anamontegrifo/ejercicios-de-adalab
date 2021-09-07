@@ -7,6 +7,7 @@ const image3 = document.querySelector('.js-image3');
 function selectACity() {
 	const selectedCity = inputCity.value;
 	console.log(selectedCity);
+
 	switch (selectedCity) {
 		case 'Madrid':
 			image1.src =
