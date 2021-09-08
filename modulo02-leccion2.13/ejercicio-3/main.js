@@ -17,5 +17,4 @@ const welcome = (one) => {
 };
 
 const newArray = users.map(welcome);
-
 console.log(newArray);

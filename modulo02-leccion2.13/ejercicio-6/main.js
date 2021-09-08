@@ -8,12 +8,26 @@ const users = [
 	{ name: 'Inmaculada', isPremium: false, pin: 8998 },
 ];
 
-const evenPins = users.filter((user) => {
-	if (user.pin % 2 === 0) {
-		return user;
-	}
-});
-console.log(evenPins);
+const nameEvenPins = users
+	.filter((user) => {
+		if (user.pin % 2 === 0) {
+			return user;
+		}
+	})
+	.map((user) => user.name);
 
-const nameEvenPins = evenPins.map((user) => user.name);
 console.log(nameEvenPins);
+
+// const evenPins = users.filter((user) => {
+// 	if (user.pin % 2 === 0) {
+// 		return user;
+// 	}
+// });
+// console.log(evenPins);
+
+// const nameEvenPins = evenPins.map((user) => user.name);
+// console.log(nameEvenPins);
+
+// const longNames = names
+// 	.filter((name) => name.length > 5)
+// 	.map((name) => name.toUpperCase());
