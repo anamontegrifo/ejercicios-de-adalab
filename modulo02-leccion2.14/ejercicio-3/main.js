@@ -1,13 +1,31 @@
 'use strict';
 
-let counter = 1;
+//1º opción
+
+let counter = 0;
+let temp;
 const textArea = document.querySelector('.js-text');
 
-const howLongAgo = setInterval(function () {
-	textArea.innerHTML = `Escrito hace ${counter} segundos`;
+const howLongAgo = () => {
 	counter++;
-	if (counter > 60) {
+	textArea.innerHTML = `Escrito hace ${counter} segundos`;
+	if (counter === 60) {
 		textArea.innerHTML = `Escrito hace un minuto`;
-		clearInterval(howLongAgo);
+		clearInterval(temp);
 	}
-}, 1000);
+};
+
+temp = setInterval(howLongAgo, 1000);
+
+//2º opción
+// let counter = 1;
+// const textArea = document.querySelector('.js-text');
+
+// const howLongAgo = setInterval(function () {
+// 	textArea.innerHTML = `Escrito hace ${counter} segundos`;
+// 	counter++;
+// 	if (counter > 60) {
+// 		textArea.innerHTML = `Escrito hace un minuto`;
+// 		clearInterval(howLongAgo);
+// 	}
+// }, 1000);
