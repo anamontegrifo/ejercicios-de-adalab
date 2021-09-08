@@ -1,0 +1,22 @@
+.box {
+	height: 50px;
+	width: 50px;
+	border: 5px solid brown;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.button {
+	width: 80px;
+	height: 30px;
+	border: none;
+	border-radius: 5px;
+	background-color: brown;
+	color: white;
+}
+
+.button:active {
+	background: orange;
+}
