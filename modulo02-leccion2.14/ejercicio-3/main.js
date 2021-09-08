@@ -3,7 +3,6 @@
 //1º opción
 
 let counter = 0;
-let temp;
 const textArea = document.querySelector('.js-text');
 
 const howLongAgo = () => {

@@ -27,3 +27,19 @@ const removeMsg = () => {
 };
 
 setTimeout(removeMsg, 6000);
+
+//CLEARINTERVAL
+
+//en este ejemplo el contador para a los 10 segundos
+let count = 0;
+let temp;
+
+const increment = () => {
+	count++;
+	const time3 = document.querySelector('.time3');
+	time3.innerHTML = count;
+	if (count === 10) {
+		clearInterval(temp);
+	}
+};
+temp = setInterval(increment, 1000);

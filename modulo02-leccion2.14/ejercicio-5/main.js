@@ -14,12 +14,11 @@ const incrementAndShowCounter = () => {
 	time.innerHTML = counter;
 	grapeArea.innerHTML = grape;
 
-	if (counter > 12) {
-		time.innerHTML = '';
-		grapeArea.innerHTML = '';
+	if (counter === 12) {
+		clearInterval(temp);
 	}
 };
-setInterval(incrementAndShowCounter, 1000);
+temp = setInterval(incrementAndShowCounter, 1000);
 
 //2º opción
 // let counter = 0;
