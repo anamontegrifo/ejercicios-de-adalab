@@ -13,5 +13,7 @@ const evenPins = users.filter((user) => {
 		return user;
 	}
 });
-
 console.log(evenPins);
+
+const nameEvenPins = evenPins.map((user) => user.name);
+console.log(nameEvenPins);
