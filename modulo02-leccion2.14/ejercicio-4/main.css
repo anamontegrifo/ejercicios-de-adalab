@@ -1,0 +1,28 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: brown;
+}
+.box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: cornsilk;
+	width: 500px;
+	height: 200px;
+}
+.title {
+	color: brown;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+		'Lucida Sans', Arial, sans-serif;
+}
+.hidden {
+	display: none;
+}

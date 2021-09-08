@@ -1,6 +1,6 @@
 'use strict';
 
-//SEtINTERVAL
+//SETINTERVAL
 let counter = 0;
 let counter2 = 100;
 
@@ -19,3 +19,11 @@ const decrementAndShowCounter = () => {
 	time.innerHTML = counter2;
 };
 setInterval(decrementAndShowCounter, 1000);
+
+//SETTIMEOUT
+const removeMsg = () => {
+	const msg = document.querySelector('.msg');
+	msg.innerHTML = '';
+};
+
+setTimeout(removeMsg, 6000);
