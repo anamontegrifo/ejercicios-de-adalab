@@ -6,7 +6,7 @@
 Seleccionar los elementos del HTML donde voy a pintar la paleta
 Hacer una petición al servidor FETCH
 Parsear los datos que nos devuelve el servidor (transformarlos con .json())
-Guardar en una variable local y pintar en el HTML los datos
+Guardar en una variable global y pintar en el HTML los datos
 Ponerlo bonito
 
 -[] Pintar muchas paletas
