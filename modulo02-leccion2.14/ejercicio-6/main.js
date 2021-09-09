@@ -19,7 +19,6 @@ function stopInterval() {
 
 function restartInterval() {
 	if (temp) {
-		clearInterval(temp);
 		temp = setInterval(incrementAndShowCounter, 1000);
 		counter = counter + 1;
 		time.innerHTML = counter;
