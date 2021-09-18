@@ -1,5 +1,5 @@
 import logo from '../images/adalab-logo-155x61.png';
-import '../styles/App.css';
+import '../styles/App.scss';
 
 function App() {
 	return (
@@ -15,9 +15,9 @@ function App() {
 				</a>
 				<nav>
 					<ul className="nav-section">
-						<li className="li-items">
+						<li className="li-items nav__items">
 							<a
-								className="nav-link"
+								className="nav__link"
 								href="https://adalab.es/blog/"
 								title="Acceso a blog"
 								target="_blank"
