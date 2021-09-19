@@ -1,0 +1,78 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../../images/cover.jpg);
+    background-position: center;
+    background-size: cover;
+
+    &__hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__menu {
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+        background-color: $mediumBlue;
+        line-height: 44px;
+    }
+
+    &__title {
+        width: 290px;
+        font-family: $title;
+        color: $white;
+        font-size: 42px;
+        text-shadow: 0 2px 3px var(--k-20);
+        font-weight: bold;
+        line-height: 1.31;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        @include tablet {
+            width: 752px;
+            width: px;
+            font-size: 80px;
+            line-height: 1.33;
+            margin-bottom: 20px;
+        }
+        @include desktop {
+            width: 772px;
+            font-size: 100px;
+            margin-bottom: 0;
+        }
+    }
+
+    &__text {
+        font-family: $regular;
+        color: $white;
+        text-align: center;
+        margin-bottom: 45px;
+        @include tablet {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__arrow {
+        @include arrow();
+        margin-bottom: 53px;
+        @include tablet {
+            margin-bottom: 45px;
+        }
+        @include desktop {
+            margin-bottom: 13px;
+        }
+    }
+}

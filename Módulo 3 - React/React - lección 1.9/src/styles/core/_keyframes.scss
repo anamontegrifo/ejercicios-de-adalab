@@ -1,0 +1,15 @@
+@keyframes arrow {
+    0% {
+        background-color: $white;
+        transform: translateY(-50%);
+    }
+
+    50% {
+        background-color: $darkBlue;
+        transform: translateY(0);
+    }
+    100% {
+        background-color: $white;
+        transform: translateY(-50%);
+    }
+}

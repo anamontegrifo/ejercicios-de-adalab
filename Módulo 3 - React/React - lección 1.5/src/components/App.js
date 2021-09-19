@@ -1,5 +1,6 @@
-import logo from '../images/adalab-logo-155x61.png';
 import '../styles/App.scss';
+import logo from '../images/adalab-logo-155x61.png';
+console.log(logo);
 
 function App() {
 	return (
@@ -9,7 +10,8 @@ function App() {
 					<img
 						className="logo-adalab"
 						title="logo Adalab"
-						src={logo}
+						// src={logo} //desde archivo local
+						src="https://beta.adalab.es/resources/images/adalab-logo-128x128.png"
 						alt="logo adalab"
 					/>
 				</a>

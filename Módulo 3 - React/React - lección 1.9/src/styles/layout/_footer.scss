@@ -1,0 +1,78 @@
+.footer {
+    height: 465px;
+    background-color: $darkBlue;
+
+    &__arrow {
+        position: absolute;
+        left: 0;
+        right: 0;
+        transform: translateY(-50%);
+        animation-name: arrow;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        @include arrow();
+    }
+
+    &__flex {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        @include tablet {
+            flex-direction: row;
+            justify-content: center;
+            text-align: left;
+        }
+    }
+
+    &__nav-interest {
+        padding-top: 60px;
+        @include tablet {
+            order: 2;
+            padding-top: 45px;
+            width: 210px;
+            margin: 0 30px;
+        }
+        @include desktop {
+            width: 160px;
+        }
+    }
+
+    &__nav-sm {
+        padding-top: 30px;
+        @include tablet {
+            order: 3;
+            padding-top: 45px;
+            width: 210px;
+        }
+        @include desktop {
+            width: 160px;
+        }
+    }
+
+    &__item {
+        @include footerFont();
+    }
+
+    &__copy {
+        padding-top: 30px;
+        padding-bottom: 45px;
+        color: $white;
+        font-size: 14px;
+        line-height: 2.14;
+        &--heart {
+            color: $orange;
+        }
+        @include tablet {
+            order: 1;
+            padding-top: 45px;
+            width: 210px;
+        }
+        @include desktop {
+            width: 160px;
+        }
+    }
+
+    @include tablet {
+        height: 240px;
+    }
+}

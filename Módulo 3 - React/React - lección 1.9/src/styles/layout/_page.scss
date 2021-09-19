@@ -1,0 +1,12 @@
+body {
+  font-family: $regular;
+}
+.wrapper {
+  margin: 0 15px;
+  @include tablet {
+    margin: 0 39px;
+  }
+  @include desktop {
+    margin: 0 275px;
+  }
+}
