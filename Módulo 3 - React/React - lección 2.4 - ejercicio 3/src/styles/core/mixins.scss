@@ -1,0 +1,95 @@
+//Mixins & Mediaqueries
+
+//Arrow button
+@mixin arrow() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: $white;
+    line-height: 44px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+//Main titles
+@mixin mainTitle() {
+    font-family: $title;
+    font-size: 24px;
+    line-height: 1.25;
+    text-transform: capitalize;
+    color: $black;
+    @include tablet {
+        font-size: 26px;
+        line-height: 1.73;
+    }
+    @include desktop {
+        font-size: 32px;
+        line-height: 1.41;
+    }
+}
+
+//Article titles
+@mixin articleTitle() {
+    font-family: $title;
+    font-size: 18px;
+    line-height: 1.67;
+    color: $black;
+    @include tablet {
+        font-size: 24px;
+        line-height: 1.25;
+    }
+}
+
+//Article texts
+@mixin articleText() {
+    font-size: 18px;
+    line-height: 1.67;
+    @include tablet {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+}
+
+//Main buttons
+@mixin mainButton() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    border-radius: 22.5px;
+    font-size: 20px;
+    line-height: 45px;
+    font-weight: 500;
+    transform: scale(1);
+    transition: transform ease 0.4s;
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+//footer font
+@mixin footerFont() {
+    font-size: 16px;
+    line-height: 1.88;
+    text-transform: uppercase;
+    color: $white;
+    &:hover {
+        color: $orange;
+    }
+}
+
+//Mediaqueries
+@mixin tablet {
+    @media all and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media all and (min-width: 1200px) {
+        @content;
+    }
+}

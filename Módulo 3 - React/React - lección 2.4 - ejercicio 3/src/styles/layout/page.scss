@@ -1,0 +1,30 @@
+body {
+  font-family: $regular;
+}
+.wrapper {
+  margin: 0 15px;
+  @include tablet {
+    margin: 0 39px;
+  }
+  @include desktop {
+    margin: 0 275px;
+  }
+}
+.open {
+	height: 100vh;
+	width: 20vh;
+	position: absolute;
+	top: 0;
+	z-index: 999;
+	background-color: $mediumBlue;
+	display: flex;
+	flex-direction: column;justify-content: space-evenly;
+	padding: 10px;
+}
+
+.close {
+	display: none;
+}
+.icon {
+	height: 40px;
+}
