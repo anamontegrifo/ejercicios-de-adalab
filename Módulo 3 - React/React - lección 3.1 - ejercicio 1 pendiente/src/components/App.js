@@ -6,7 +6,7 @@ function App() {
 	const [ingredient, setIngredient] = useState('');
 
 	const handleTortilla = (event) => {
-		setIngredient(event.currentTarget.id);
+		setIngredient(event.target.id);
 		console.log(ingredient);
 
 		if (event.currentTarget.checked === false) {
