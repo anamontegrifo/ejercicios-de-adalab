@@ -1,0 +1,140 @@
+import { useState } from 'react';
+import '../styles/App.scss';
+
+function App() {
+	const [cebolla, setCebolla] = useState('');
+	const [huevos, setHuevos] = useState('');
+	const [patatas, setPatatas] = useState('');
+	const [nueces, setNueces] = useState('');
+	const [macarrones, setMacarrones] = useState('');
+	const [cerveza, setCerveza] = useState('');
+
+	const handleTortilla = (event) => {
+		if (event.target.id === 'cebolla') {
+			setCebolla(event.target.checked);
+		} else if (event.target.id === 'huevos') {
+			setHuevos(event.target.checked);
+		} else if (event.target.id === 'patatas') {
+			setPatatas(event.target.checked);
+		} else if (event.target.id === 'nueces') {
+			setNueces(event.target.checked);
+		} else if (event.target.id === 'macarrones') {
+			setMacarrones(event.target.checked);
+		} else if (event.target.id === 'cerveza') {
+			setCerveza(event.target.checked);
+		}
+	};
+	const recipe = () => {
+		if (cebolla && huevos && patatas && !nueces && !macarrones && !cerveza) {
+			return 'Eres una persona concebollista';
+		} else {
+			return 'Eres un robot sin paladar';
+		}
+	};
+
+	const handleSubmit = (event) => {
+		event.preventDefault();
+	};
+
+	const handleCheckAll = () => {
+		setCebolla(true);
+		setHuevos(true);
+		setPatatas(true);
+		setNueces(true);
+		setMacarrones(true);
+		setCerveza(true);
+	};
+
+	const handleUncheckAll = () => {
+		setCebolla(false);
+		setHuevos(false);
+		setPatatas(false);
+		setNueces(false);
+		setMacarrones(false);
+		setCerveza(false);
+	};
+
+	return (
+		<div>
+			<h1>Selecciona los ingredientes de la tortilla de patata</h1>
+
+			<form onSubmit={handleSubmit} className="formContainer" action="">
+				<label htmlFor="macarrones">
+					<input
+						onChange={handleTortilla}
+						type="checkbox"
+						name="ing"
+						id="macarrones"
+						checked={macarrones}
+					/>
+					Macarrones
+				</label>
+
+				<label htmlFor="patatas">
+					<input
+						onChange={handleTortilla}
+						type="checkbox"
+						value="recipe"
+						name="ing"
+						id="patatas"
+						checked={patatas}
+					/>
+					Patatas
+				</label>
+				<label htmlFor="nueces">
+					<input
+						onChange={handleTortilla}
+						type="checkbox"
+						value="noRecipe"
+						name="ing"
+						id="nueces"
+						checked={nueces}
+					/>
+					Nueces
+				</label>
+				<label htmlFor="huevos">
+					<input
+						onChange={handleTortilla}
+						type="checkbox"
+						value="recipe"
+						name="ing"
+						id="huevos"
+						checked={huevos}
+					/>
+					Huevos
+				</label>
+				<label htmlFor="cebolla">
+					<input
+						onChange={handleTortilla}
+						type="checkbox"
+						value="recipe"
+						name="ing"
+						id="cebolla"
+						checked={cebolla}
+					/>
+					Cebolla
+				</label>
+				<label htmlFor="cerveza">
+					<input
+						onChange={handleTortilla}
+						type="checkbox"
+						value="noRecipe"
+						name="ing"
+						id="cerveza"
+						checked={cerveza}
+					/>
+					Cerveza
+				</label>
+				<p>{recipe()}</p>
+				<button className="button" onClick={handleCheckAll}>
+					Marcar todos
+				</button>
+				<button className="button" onClick={handleUncheckAll}>
+					Desmarcar todos
+				</button>
+			</form>
+		</div>
+	);
+}
+
+export default App;
