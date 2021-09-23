@@ -1,9 +1,10 @@
 import '../styles/App.scss';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import initialData from '../data/contacts.json';
+import ls from '../services/localStorage.js';
 
 function App() {
-	const [data, setData] = useState(initialData);
+	const [data, setData] = useState(ls.get('lsData', ''));
 	const [search, setSearch] = useState('');
 
 	const [newContact, setNewContact] = useState({
@@ -12,6 +13,10 @@ function App() {
 		phone: '',
 		email: '',
 	});
+
+	useEffect(() => {
+		ls.set('lsData', data);
+	}, [data]);
 
 	const handleChangeSearch = (event) => {
 		setSearch(event.currentTarget.value);
@@ -35,6 +40,11 @@ function App() {
 		}
 	};
 
+	const handleReset = (event) => {
+		event.preventDefault();
+		setData(initialData);
+	};
+
 	const handleClick = (event) => {
 		event.preventDefault();
 
@@ -46,7 +56,7 @@ function App() {
 			email: '',
 		});
 	};
-
+	console.log(data);
 	const htmContactList = () => {
 		return (
 			data
@@ -159,6 +169,13 @@ function App() {
 						className="new-contact__btn"
 						type="submit"
 						value="Añadir"
+					/>
+
+					<input
+						onClick={handleReset}
+						className="new-contact__btn"
+						type="submit"
+						value="Agenda inicial"
 					/>
 				</form>
 			</main>
