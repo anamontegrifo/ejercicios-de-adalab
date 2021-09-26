@@ -12,6 +12,10 @@ function App() {
 		},
 	]);
 
+	const totalTasks = tasks.length;
+	const completedTasks = tasks.filter((task) => task.completed === true);
+
+	const unfinishedTasks = tasks.filter((task) => task.completed === false);
 	const [searchTask, setSearchTask] = useState('');
 
 	const handleSearch = (event) => {
@@ -21,10 +25,6 @@ function App() {
 	const handleClicked = (event) => {
 		/* Aquí guardamos la id del elemento clickado, se la pusimos en la función render al generar los <li> */
 		const id = event.currentTarget.id;
-		console.log(id);
-		console.log(tasks[id]);
-		console.log(tasks[id].task);
-		console.log(tasks[id].completed);
 		/* Aplicamos el valor contrario a lo que tenemos en el momento de clickar*/
 		tasks[id].completed = !tasks[id].completed;
 
@@ -61,6 +61,9 @@ function App() {
 				<input type="text" id="searchTask" onChange={handleSearch} />
 			</form>
 			<ul>{renderTasks()}</ul>
+			<p>Tareas totales: {totalTasks} </p>
+			<p>Tareas completadas: {completedTasks.length}</p>
+			<p>Tareas pendientes: {unfinishedTasks.length}</p>
 		</div>
 	);
 }
