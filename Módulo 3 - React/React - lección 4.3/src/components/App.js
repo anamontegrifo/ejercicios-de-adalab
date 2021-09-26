@@ -15,18 +15,18 @@ const App = () => {
 	// Eventos
 
 	const handleFavorite = (ev) => {
-		const clickedSerieId = ev.currentTarget.id;
-		const foundSerie = series.find((serie) => serie.id === clickedSerieId);
-		foundSerie.isFavorite = !foundSerie.isFavorite;
-		setSeries([...series]);
+		const clickedSerieId = ev.currentTarget.id; //id de la serie clickada
+		const foundSerie = series.find((serie) => serie.id === clickedSerieId); //le pedimos que nos busque la serie cuyo id coincida con el id de la serie clickada
+		foundSerie.isFavorite = !foundSerie.isFavorite; //nos cambia el estado al contrario al existente de la serie encontrada
+		setSeries([...series]); //Guardamos los cambios en la variable de estado
 	};
 
 	const handleSearchName = (ev) => {
-		setSearchName(ev.target.value);
+		setSearchName(ev.target.value); //búsqueda en el input
 	};
 
 	const handleSearchIsFavorite = (ev) => {
-		setSearchIsFavorite(ev.target.checked);
+		setSearchIsFavorite(ev.target.checked); //checkbox marcado: true o false
 	};
 
 	// Funciones de renderizado
@@ -34,11 +34,11 @@ const App = () => {
 	const renderSeries = () => {
 		return (
 			series
-				// Filtramos por nombre
+				// Filtramos por nombre, nos muestra las series que incluyen en el título la búsqueda que hacemos en el input
 				.filter((serie) => {
 					return serie.name.toLowerCase().includes(searchName.toLowerCase());
 				})
-				// Filtramos por favorito
+				// Filtramos por favorito, si el checkbox está marcado nos devuelve las series cuyo campo isFavorite es true.
 				.filter((serie) => {
 					if (searchIsFavorite === true) {
 						return serie.isFavorite === true;
@@ -46,7 +46,7 @@ const App = () => {
 						return true;
 					}
 				})
-				// Mapeamos
+				// Mapeamos, imprimimos la estructura HTML después de los filtros
 				.map((serie) => {
 					return (
 						<li key={serie.id} id={serie.id} onClick={handleFavorite}>
