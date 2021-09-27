@@ -1,3 +1,5 @@
+import logo from '../images/adalab-logo-155x61.png';
+
 const Header = () => {
 	return (
 		<header className="header-section">
@@ -5,9 +7,8 @@ const Header = () => {
 				<img
 					className="logo-adalab"
 					title="logo Adalab"
-					// src={logo} //desde archivo local
-					src="https://beta.adalab.es/resources/images/adalab-logo-128x128.png"
-					alt="logo adalab"
+					src={logo}
+					alt="logo"
 				/>
 			</a>
 			<nav>

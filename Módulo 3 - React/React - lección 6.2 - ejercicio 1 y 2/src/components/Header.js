@@ -28,6 +28,22 @@ const Header = () => {
 					/>
 				</ul>
 			</nav>
+			<nav>
+				<ul className="nav">
+					<Link
+						href="https://adalab.es/blog/"
+						title="Acceso a blog"
+						text="quiénes somos"
+						openInNewTab={true}
+					/>
+					<Link
+						href="https://adalab.es/contacto/"
+						title="Acceso a contacto"
+						text="contacto"
+						openInNewTab={false}
+					/>
+				</ul>
+			</nav>
 		</header>
 	);
 };

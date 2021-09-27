@@ -1,4 +1,3 @@
-import '../styles/core/Reset.scss';
 import '../styles/App.scss';
 
 import Header from './Header';
