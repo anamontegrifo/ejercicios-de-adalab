@@ -1,0 +1,27 @@
+@import "./core/reset.scss";
+h2 {
+	padding: 20px;
+}
+
+.nav {
+	padding: 20px;
+	
+	&-Image {
+		height: 60px;
+	}
+	&-List {
+		display: flex;
+		gap: 10px;
+		&__item {
+			text-decoration: none;
+			color: slateblue;
+		}
+	}
+}
+.mesagge {
+	padding: 20px;
+	height: 50px;
+	background-color: lightblue;
+	display: flex;
+	align-items: center;
+}
