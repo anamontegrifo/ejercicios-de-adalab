@@ -5,14 +5,14 @@ const InputGroupText = (props) => {
 
 	return (
 		<div className="input-group-text">
-			<label className="label-text" htmlFor={props.inputId}>
+			<label className="label-text" htmlFor={props.inputName}>
 				{props.labelText}
 			</label>
 			<input
 				className="input-text"
 				type="text"
 				name={props.inputName}
-				id={props.inputId}
+				id={props.inputName}
 				placeholder={props.inputPlaceholder}
 				value={props.inputValue}
 				onChange={handleInputChange}

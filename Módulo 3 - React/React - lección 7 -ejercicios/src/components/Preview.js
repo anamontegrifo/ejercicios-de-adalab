@@ -20,7 +20,7 @@ const Preview = (props) => {
 				<li>Método de pago: {renderPaymentTypeText()}</li>
 				<li>
 					Has aceptado nuestros términos legales:{' '}
-					{props.legalTerms === true ? 'Sí' : 'No'}
+					{props.legal === true ? 'Sí' : 'No'}
 				</li>
 			</ul>
 		</div>

@@ -1,10 +1,6 @@
 // Fichero src/components/App.js
 import { useState } from 'react';
-import InputGroupText from './InputGroupText';
-import InputGroupSelect from './InputGroupSelect';
-import InputGroupRadio from './InputGroupRadio';
-import Preview from './Preview';
-import InputGroupCheck from './InputGroupCheck';
+import Form from './Form';
 
 const App = () => {
 	// Estados del componente
@@ -33,6 +29,7 @@ const App = () => {
 
 	const handleLegalTerms = (checked) => {
 		// Como lo que nos interesa es si está activo o no guardamos el checked
+
 		setLegalTerms(checked);
 	};
 
@@ -45,8 +42,7 @@ const App = () => {
 		setLegalTerms(false);
 	};
 
-	const handleForm = (ev) => {
-		ev.preventDefault();
+	const handleForm = () => {
 		console.log('Enviando datos al servidor...');
 	};
 
@@ -67,105 +63,22 @@ const App = () => {
 
 	return (
 		<div>
-			<form className="form" onSubmit={handleForm}>
-				<h2>Rellena tus datos para finalizar la compra:</h2>
-				<div className="form">
-					{/* name */}
-
-					<InputGroupText
-						labelText="Escribe un nombre"
-						inputName="name"
-						inputId="name"
-						inputPlaceholder="María García"
-						inputValue={name}
-						handleChange={handleName}
-					/>
-
-					{/* email */}
-
-					<InputGroupText
-						labelText="Escribe un email"
-						inputName="email"
-						inputId="email"
-						inputPlaceholder="mariagarcia@gmail.com"
-						inputValue={email}
-						handleChange={handleEmail}
-					/>
-
-					{/* region */}
-
-					<InputGroupSelect
-						labelText="Indica tu región"
-						inputName="region"
-						inputId="region"
-						inputValue={region}
-						handleChange={handleRegion}
-					/>
-
-					{/* payment type */}
-
-					<label className="label-text">Indica tu método de pago:</label>
-
-					<InputGroupRadio
-						labelText="Tarjeta de crédito"
-						inputId="creditCard"
-						inputValue="creditCard"
-						name="paymentType"
-						handleChange={handlePaymentType}
-						checked={paymentType === 'creditCard'}
-					/>
-
-					<InputGroupRadio
-						labelText="Efectivo"
-						inputId="cash"
-						inputValue="cash"
-						name="paymentType"
-						handleChange={handlePaymentType}
-						checked={paymentType === 'cash'}
-					/>
-
-					<InputGroupRadio
-						labelText="Contra reembolso"
-						inputId="cashOnDelivery"
-						inputValue="cashOnDelivery"
-						name="paymentType"
-						handleChange={handlePaymentType}
-						checked={paymentType === 'cashOnDelivery'}
-					/>
-
-					{/* legal terms */}
-
-					<InputGroupCheck
-						labelText="Debes aceptar nuestros términos legales para completar la compra:"
-						inputId="legalTerms"
-						name="legalTerms"
-						checked={legalTerms}
-						handleChange={handleLegalTerms}
-					/>
-				</div>
-
-				<Preview
-					name={name}
-					email={email}
-					region={region}
-					paymentType={paymentType}
-					legalTerms={legalTerms}
-				/>
-
-				{/* reset */}
-				{/* Este botón debe estar inhabilitado mientras el formulario no sea válido */}
-				<input
-					className="button"
-					type="submit"
-					value="Enviar"
-					disabled={isValidForm() === false}
-				/>
-
-				{/* send */}
-				<button className="button reset" onClick={handleResetButton}>
-					Limpiar el formulario
-				</button>
-			</form>
+			<Form
+				handleForm={handleForm}
+				handleName={handleName}
+				handleEmail={handleEmail}
+				handleRegion={handleRegion}
+				handlePaymentType={handlePaymentType}
+				handleResetButton={handleResetButton}
+				handleFormSubmit={handleForm}
+				name={name}
+				email={email}
+				region={region}
+				paymentType={paymentType}
+				handleValid={isValidForm() === false}
+				checkedRadio={legalTerms}
+				handleLegal={handleLegalTerms}
+			/>
 		</div>
 	);
 };
