@@ -1,6 +1,5 @@
 const InputGroupRadio = (props) => {
 	const handleInputChange = (event) => {
-		console.log(event.currentTarget.value);
 		props.handleChange(event.target.value);
 	};
 	return (
@@ -11,7 +10,7 @@ const InputGroupRadio = (props) => {
 			{/* Este radio solo debe aparecer activo cuando paymentType sea creditCard */}
 			<input
 				type="radio"
-				name="paymentType"
+				name={props.name}
 				id={props.inputId}
 				value={props.inputValue}
 				checked={props.checked}
