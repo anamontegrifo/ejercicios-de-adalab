@@ -1,7 +1,9 @@
 import '../styles/App.scss';
 import { useEffect, useState } from 'react';
+import { Link, Route, Switch, useRouteMatch } from 'react-router-dom';
 import callToApi from '../services/api';
 import Catalog from './Catalog';
+import ProductDetail from './ProductDetail';
 
 function App() {
 	// Estados
@@ -19,9 +21,24 @@ function App() {
 		// Aquí ponemos un array vacío porque queremos que se llame al API solo la primera vez
 	}, []);
 
+	const routeData = useRouteMatch('/product-detail/:id');
+	console.log(routeData);
+	let productItem = null;
+	if (routeData !== null) {
+		productItem = products.find((item) => item.id === routeData.params.id);
+		console.log(routeData);
+	}
+
 	return (
 		<div>
-			<Catalog products={products} />
+			<switch>
+				<Route exact path="/">
+					<Catalog products={products} />
+				</Route>
+				<Route path="/product-detail/:id">
+					<ProductDetail productItem={productItem} />
+				</Route>
+			</switch>
 		</div>
 	);
 }

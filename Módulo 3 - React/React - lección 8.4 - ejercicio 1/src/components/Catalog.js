@@ -1,3 +1,5 @@
+import { Link, Route, Switch, useRouteMatch } from 'react-router-dom';
+
 const Catalog = (props) => {
 	const renderProducts = () => {
 		return props.products.map((shirt) => {
@@ -6,7 +8,9 @@ const Catalog = (props) => {
 					<img className="list__image" src={shirt.imageUrl} alt="tshirt" />
 					<p>{shirt.name}</p>
 					<p>{shirt.price}</p>
-					<button>Ver detalle de producto</button>
+					<Link to={`/product-detail/${shirt.id}`}>
+						<button>Ver detalle de producto</button>
+					</Link>
 				</li>
 			);
 		});
