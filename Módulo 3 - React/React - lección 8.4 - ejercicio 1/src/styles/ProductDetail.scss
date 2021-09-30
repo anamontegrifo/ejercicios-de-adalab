@@ -1,8 +1,12 @@
-.list {
+body {
 	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
+.detail {
 	&__item {
-		width: 100px;
+		width: 300px;
 		padding: 10px;
 		list-style: none;
 		border: 1px solid aqua;
