@@ -1,6 +1,6 @@
 import '../styles/App.scss';
 import { useEffect, useState } from 'react';
-import { Link, Route, Switch, useRouteMatch } from 'react-router-dom';
+import { Route, Switch, useRouteMatch } from 'react-router-dom';
 import callToApi from '../services/api';
 import Catalog from './Catalog';
 import ProductDetail from './ProductDetail';
@@ -9,6 +9,7 @@ function App() {
 	// Estados
 
 	const [products, setProducts] = useState([]);
+	const [searchName, setSearchName] = useState('');
 
 	// Llamar al api con useEffect
 
@@ -29,11 +30,22 @@ function App() {
 		console.log(routeData);
 	}
 
+	const handleSearch = (event) => {
+		setSearchName(event.currentTarget.value);
+	};
+	const filteredProducts = products.filter((item) =>
+		item.name.toLocaleLowerCase().includes(searchName.toLocaleLowerCase())
+	);
+
 	return (
 		<div>
 			<Switch>
 				<Route exact path="/">
-					<Catalog products={products} />
+					<Catalog
+						products={filteredProducts}
+						searchName={searchName}
+						handleSearch={handleSearch}
+					/>
 				</Route>
 				<Route path="/product-detail/:id">
 					<ProductDetail productItem={productItem} />

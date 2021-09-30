@@ -1,5 +1,5 @@
 import '../styles/ProductDetail.scss';
-import { Link, Route, Switch, useRouteMatch } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const ProductDetail = (props) => {
 	return (
