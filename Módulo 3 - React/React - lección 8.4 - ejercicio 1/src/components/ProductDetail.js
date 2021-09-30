@@ -2,6 +2,10 @@ import '../styles/ProductDetail.scss';
 import { Link } from 'react-router-dom';
 
 const ProductDetail = (props) => {
+	const newSizes = props.productItem.sizes;
+
+	const [firstSize, secondSize, thirthSize] = newSizes;
+
 	return (
 		<div>
 			<div>
@@ -13,7 +17,7 @@ const ProductDetail = (props) => {
 				<p>{props.productItem.name}</p>
 				<p>{props.productItem.description}</p>
 				<p>{props.productItem.price}</p>
-				<p>{props.productItem.sizes}</p>
+				<p>{`Tallas ${firstSize} - ${secondSize} - ${thirthSize}`}</p>
 			</div>
 			<Link to="/">
 				<button>Volver</button>

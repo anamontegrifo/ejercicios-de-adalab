@@ -6,6 +6,7 @@ const ProductItem = (props) => {
 			<img className="list__image" src={props.shirt.imageUrl} alt="tshirt" />
 			<p>{props.shirt.name}</p>
 			<p>{props.shirt.price}</p>
+			<p>{props.shirt.id}</p>
 			<Link to={`/product-detail/${props.shirt.id}`}>
 				<button>Ver detalle de producto</button>
 			</Link>

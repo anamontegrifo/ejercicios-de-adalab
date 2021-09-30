@@ -10,6 +10,7 @@ function App() {
 
 	const [products, setProducts] = useState([]);
 	const [searchName, setSearchName] = useState('');
+	console.log(products);
 
 	// Llamar al api con useEffect
 
@@ -23,18 +24,20 @@ function App() {
 	}, []);
 
 	const routeData = useRouteMatch('/product-detail/:id');
-	console.log(routeData);
+
 	let productItem = null;
 	if (routeData !== null) {
 		productItem = products.find((item) => item.id === routeData.params.id);
-		console.log(routeData);
 	}
 
 	const handleSearch = (event) => {
 		setSearchName(event.currentTarget.value);
 	};
-	const filteredProducts = products.filter((item) =>
-		item.name.toLocaleLowerCase().includes(searchName.toLocaleLowerCase())
+	const filteredProducts = products.filter(
+		(item) =>
+			item.name.toLocaleLowerCase().includes(searchName.toLocaleLowerCase()) ||
+			item.price.toString().includes(searchName) ||
+			item.id.toLocaleLowerCase().includes(searchName.toLocaleLowerCase())
 	);
 
 	return (
