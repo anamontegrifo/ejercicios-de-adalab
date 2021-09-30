@@ -1,16 +1,12 @@
 import { Link, Route, Switch, useRouteMatch } from 'react-router-dom';
+import ProductItem from './ProductItem';
 
 const Catalog = (props) => {
 	const renderProducts = () => {
 		return props.products.map((shirt) => {
 			return (
-				<li className="list__item">
-					<img className="list__image" src={shirt.imageUrl} alt="tshirt" />
-					<p>{shirt.name}</p>
-					<p>{shirt.price}</p>
-					<Link to={`/product-detail/${shirt.id}`}>
-						<button>Ver detalle de producto</button>
-					</Link>
+				<li key={shirt.id} className="list__item">
+					<ProductItem shirt={shirt} />
 				</li>
 			);
 		});

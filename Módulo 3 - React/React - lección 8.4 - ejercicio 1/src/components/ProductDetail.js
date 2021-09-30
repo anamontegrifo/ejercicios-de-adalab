@@ -11,7 +11,9 @@ const ProductDetail = (props) => {
 					alt="tshirt"
 				/>
 				<p>{props.productItem.name}</p>
+				<p>{props.productItem.description}</p>
 				<p>{props.productItem.price}</p>
+				<p>{props.productItem.sizes}</p>
 			</div>
 			<Link to="/">
 				<button>Volver</button>

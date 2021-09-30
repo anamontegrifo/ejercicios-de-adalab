@@ -31,14 +31,14 @@ function App() {
 
 	return (
 		<div>
-			<switch>
+			<Switch>
 				<Route exact path="/">
 					<Catalog products={products} />
 				</Route>
 				<Route path="/product-detail/:id">
 					<ProductDetail productItem={productItem} />
 				</Route>
-			</switch>
+			</Switch>
 		</div>
 	);
 }
