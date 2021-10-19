@@ -25,7 +25,6 @@ function App() {
 						alt="menu"
 					/>
 				</nav>
-				<div className="header__hero wrapper"></div>
 			</header>
 
 			<div className="container">
